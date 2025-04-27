@@ -17,7 +17,7 @@ jobs:
       - run: npm run build
 
       - name: Upload via rsync over SSH
-        uses: burnett01/rsync-deployments@v7.2
+        uses: burnett01/rsync-deployments@v1
         with:
           switches: -avzr --delete
           path: build/
