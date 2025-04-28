@@ -12,42 +12,35 @@ cache:
 variables:
   NODE_ENV: production
   RSYNC_FLAGS: "-az --delete"
-  DRY_RUN: "true"            # flip to false when you’re confident
 
-# ─────────────────────────── build static site
+# ───────────────────────── build static site
 build:
   stage: build
   script:
     - npm ci
-    - npm run build           # → ./build
+    - npm run build            # → ./build
   artifacts:
     paths:
       - build/
     expire_in: 1 week
 
-# ─────────────────────────── deploy via rsync over SSH
+# ───────────────────────── deploy via rsync over SSH
 deploy_static_site:
   stage: deploy
-  needs: ["build"]            # download the artifact ZIP automatically
-  image: alpine:latest        # small image with apk for ssh/rsync
+  needs: ["build"]             # pulls the artifact ZIP
+  image: alpine:latest         # small image with ssh + rsync
   before_script:
     - apk add --no-cache openssh-client rsync
     - mkdir -p ~/.ssh
     - eval "$(ssh-agent -s)"
-    - echo "$SSH_PRIVATE_KEY" > id_rsa && chmod 600 id_rsa
-    - ssh-add id_rsa
+    # SSH_PRIVATE_KEY is a *File* variable → its value is the temp filename
+    - install -m 600 "$SSH_PRIVATE_KEY" ~/.ssh/id_rsa
+    - ssh-add ~/.ssh/id_rsa
     - ssh-keyscan -H "$SSH_HOST" >> ~/.ssh/known_hosts
-  script: |
-    set -euo pipefail
-    if [ "$DRY_RUN" = "true" ]; then
-      DRY_OPT="--dry-run"
-      echo "⚠️  DRY RUN ENABLED – no files will be changed"
-    else
-      DRY_OPT=""
-    fi
-    rsync $RSYNC_FLAGS $DRY_OPT build/ "$SSH_USER@$SSH_HOST:$SSH_TARGET_DIR"
+  script:
+    - rsync $RSYNC_FLAGS build/ "$SSH_USER@$SSH_HOST:$SSH_TARGET_DIR"
   rules:
-    - if: $CI_COMMIT_BRANCH == "main"
+    - if: $CI_COMMIT_BRANCH == "main"        # deploys only from main
   environment:
     name: production
     url: https://cognitivemetrics.co/wiki/
