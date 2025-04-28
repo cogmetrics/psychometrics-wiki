@@ -2,7 +2,7 @@ image: node:18
 
 stages:
   - build
-  - trigger-deploy          # runs only after a successful build
+  - deploy
 
 cache:
   key: node-modules
@@ -11,25 +11,43 @@ cache:
 
 variables:
   NODE_ENV: production
+  RSYNC_FLAGS: "-az --delete"
+  DRY_RUN: "true"            # flip to false when you’re confident
 
-# ───────────────────────────────────────────────────────────── build
+# ─────────────────────────── build static site
 build:
   stage: build
   script:
     - npm ci
-    - npm run build          # → ./build
+    - npm run build           # → ./build
   artifacts:
     paths:
       - build/
     expire_in: 1 week
 
-# ─────────────────────────────────────────────────── trigger deploy
-deploy_trigger:
-  stage: trigger-deploy
-  needs: ["build"]           # wait until the build artifact exists
-  trigger:
-    project: cognitivemetrics/wiki-deploy   # downstream repo
-    branch: main
-    strategy: depend         # parent waits for the downstream result
+# ─────────────────────────── deploy via rsync over SSH
+deploy_static_site:
+  stage: deploy
+  needs: ["build"]            # download the artifact ZIP automatically
+  image: alpine:latest        # small image with apk for ssh/rsync
+  before_script:
+    - apk add --no-cache openssh-client rsync
+    - mkdir -p ~/.ssh
+    - eval "$(ssh-agent -s)"
+    - echo "$SSH_PRIVATE_KEY" > id_rsa && chmod 600 id_rsa
+    - ssh-add id_rsa
+    - ssh-keyscan -H "$SSH_HOST" >> ~/.ssh/known_hosts
+  script: |
+    set -euo pipefail
+    if [ "$DRY_RUN" = "true" ]; then
+      DRY_OPT="--dry-run"
+      echo "⚠️  DRY RUN ENABLED – no files will be changed"
+    else
+      DRY_OPT=""
+    fi
+    rsync $RSYNC_FLAGS $DRY_OPT build/ "$SSH_USER@$SSH_HOST:$SSH_TARGET_DIR"
   rules:
     - if: $CI_COMMIT_BRANCH == "main"
+  environment:
+    name: production
+    url: https://cognitivemetrics.co/wiki/
