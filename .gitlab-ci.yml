@@ -2,34 +2,52 @@ image: node:18
 
 stages:
   - build
-  - trigger-deploy          # runs only after a successful build
+  - deploy
 
-cache:
-  key: node-modules
-  paths:
-    - node_modules/
+guard_ci_file:
+  stage: .pre
+  script:
+    - |
+      echo "Guard check for CI edits"
+      # Allow @polarcaptain to push CI changes directly
+      if [ "$GITLAB_USER_LOGIN" != "polarcaptain" ] && \
+         git diff --name-only "$CI_COMMIT_BEFORE_SHA" "$CI_COMMIT_SHA" \
+           | grep -qx '.gitlab-ci.yml'; then
+        echo "🚫 .gitlab-ci.yml modified by non-maintainer direct push."
+        echo "   Open a merge request for review."
+        exit 1
+      fi
+      echo "✅ Guard passed."
+  rules:
+    - if: '$CI_PIPELINE_SOURCE == "push"'
+      when: on_success
+    - when: never
 
-variables:
-  NODE_ENV: production
-
-# ───────────────────────────────────────────────────────────── build
 build:
   stage: build
   script:
     - npm ci
-    - npm run build          # → ./build
+    - npm run build
   artifacts:
     paths:
       - build/
     expire_in: 1 week
 
-# ─────────────────────────────────────────────────── trigger deploy
-deploy_trigger:
-  stage: trigger-deploy
-  needs: ["build"]           # wait until the build artifact exists
-  trigger:
-    project: cognitivemetrics/wiki-deploy   # downstream repo
-    branch: main
-    strategy: depend         # parent waits for the downstream result
+deploy_static_site:
+  stage: deploy
+  needs: ["build"]
+  image: alpine:latest
+  before_script:
+    - apk add --no-cache openssh-client rsync
+    - mkdir -p ~/.ssh
+    - eval "$(ssh-agent -s)"
+    - install -m 600 "$SSH_PRIVATE_KEY" ~/.ssh/id_rsa
+    - ssh-add ~/.ssh/id_rsa
+    - ssh-keyscan -H "$SSH_HOST" >> ~/.ssh/known_hosts
+  script:
+    - rsync $RSYNC_FLAGS build/ "$SSH_USER@$SSH_HOST:$SSH_TARGET_DIR"
   rules:
     - if: $CI_COMMIT_BRANCH == "main"
+  environment:
+    name: production
+    url: https://cognitivemetrics.co/wiki/
