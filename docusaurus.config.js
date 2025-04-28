@@ -56,7 +56,6 @@ const config = {
           title: 'Learn',
           items: [
             {label: 'Quick Start', to: '/docs/intro'},
-            {label: 'API Reference', to: '/docs/api/overview'},
           ],
         },
         {
