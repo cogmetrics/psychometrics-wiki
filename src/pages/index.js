@@ -1,43 +1,52 @@
-import clsx from 'clsx';
-import Link from '@docusaurus/Link';
-import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
+import React from 'react';
 import Layout from '@theme/Layout';
-import HomepageFeatures from '@site/src/components/HomepageFeatures';
-
-import Heading from '@theme/Heading';
+import Link from '@docusaurus/Link';
 import styles from './index.module.css';
 
-function HomepageHeader() {
-  const {siteConfig} = useDocusaurusContext();
+export default function Home() {
   return (
-    <header className={clsx('hero hero--primary', styles.heroBanner)}>
-      <div className="container">
-        <Heading as="h1" className="hero__title">
-          {siteConfig.title}
-        </Heading>
-        <p className="hero__subtitle">{siteConfig.tagline}</p>
-        <div className={styles.buttons}>
-          <Link
-            className="button button--secondary button--lg"
-            to="/docs/intro">
-            Docusaurus Tutorial - 5min ⏱️
-          </Link>
+    <Layout
+      title="Cognitive Metrics"
+      description="Modern psychometrics, beautifully documented"
+    >
+      <header className={`hero heroBanner ${styles.hero}`}>
+        <div className="container">
+          <h1 className="hero__title">Cognitive Metrics</h1>
+          <p className="hero__subtitle">Modern psychometrics, beautifully documented.</p>
+          <div className={styles.buttons}>
+            <Link className="button button--primary button--lg" to="/docs/intro">
+              Get Started →
+            </Link>
+            <Link className="button button--secondary button--lg" to="/blog">
+              Read the Blog
+            </Link>
+          </div>
         </div>
-      </div>
-    </header>
+      </header>
+
+      <main>
+        <section className={styles.features}>
+          <div className="container">
+            <div className="row">
+              <Feature title="Validated tests" emoji="🧠"
+                description="All tasks follow peer-reviewed protocols and psychometric standards." />
+              <Feature title="Open-source code" emoji="💻"
+                description="Inspectable JavaScript & Python pipelines for scoring and analysis." />
+              <Feature title="API-first" emoji="⚡"
+                description="REST endpoints let you integrate Cognitive Metrics anywhere." />
+            </div>
+          </div>
+        </section>
+      </main>
+    </Layout>
   );
 }
 
-export default function Home() {
-  const {siteConfig} = useDocusaurusContext();
+function Feature({emoji, title, description}) {
   return (
-    <Layout
-      title={`${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />">
-      <HomepageHeader />
-      <main>
-        <HomepageFeatures />
-      </main>
-    </Layout>
+    <div className="col col--4 text--center">
+      <h3>{emoji} {title}</h3>
+      <p>{description}</p>
+    </div>
   );
 }
