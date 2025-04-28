@@ -1,20 +1,19 @@
 image: node:18
+stages: [build, trigger-deploy]
 
-stages:
-  - build           # local stage
-  - deploy          # pulled in from remote include
-
-# -------- BUILD --------
 build:
   stage: build
   script:
     - npm ci
-    - npm run build     # Docusaurus
+    - npm run build
   artifacts:
     paths: [build/]
 
-# -------- INCLUDE REMOTE DEPLOY JOB --------
-include:
-  - project: 'cognitivemetrics/wiki-deploy'      # <namespace>/<project>
-    file: 'deploy.yml'
-    ref: main                                # pin to a branch or tag
+deploy_trigger:
+  stage: trigger-deploy
+  needs: ["build"]
+  trigger:
+    project: cognitivemetrics/wiki-deploy
+    branch: main
+    token: $TRIGGER_TOKEN
+  artifacts: true
