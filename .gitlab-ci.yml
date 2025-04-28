@@ -2,45 +2,49 @@ image: node:18
 
 stages:
   - build
-  - deploy
 
-cache:
-  key: node-modules
-  paths:
-    - node_modules/
+guard_ci_file:
+  stage: .pre
+  script:
+    - |
+      echo "Guard check: did this push modify .gitlab-ci.yml?"
+      if git diff --name-only "$CI_COMMIT_BEFORE_SHA" "$CI_COMMIT_SHA" \
+           | grep -qx '.gitlab-ci.yml'; then
+        echo "🚫  .gitlab-ci.yml modified in a direct push."
+        echo "    Please open a merge request for review."
+        exit 1
+      fi
+      echo "Guard passed."
+  rules:
+    - if: '$CI_PIPELINE_SOURCE == "push"'
+      when: on_success
+    - when: never
 
-variables:
-  NODE_ENV: production
-  RSYNC_FLAGS: "-az --delete"
-
-# ───────────────────────── build static site
 build:
   stage: build
   script:
     - npm ci
-    - npm run build            # → ./build
+    - npm run build
   artifacts:
     paths:
       - build/
     expire_in: 1 week
 
-# ───────────────────────── deploy via rsync over SSH
 deploy_static_site:
   stage: deploy
-  needs: ["build"]             # pulls the artifact ZIP
-  image: alpine:latest         # small image with ssh + rsync
+  needs: ["build"]
+  image: alpine:latest
   before_script:
     - apk add --no-cache openssh-client rsync
     - mkdir -p ~/.ssh
     - eval "$(ssh-agent -s)"
-    # SSH_PRIVATE_KEY is a *File* variable → its value is the temp filename
     - install -m 600 "$SSH_PRIVATE_KEY" ~/.ssh/id_rsa
     - ssh-add ~/.ssh/id_rsa
     - ssh-keyscan -H "$SSH_HOST" >> ~/.ssh/known_hosts
   script:
     - rsync $RSYNC_FLAGS build/ "$SSH_USER@$SSH_HOST:$SSH_TARGET_DIR"
   rules:
-    - if: $CI_COMMIT_BRANCH == "main"        # deploys only from main
+    - if: $CI_COMMIT_BRANCH == "main"
   environment:
     name: production
     url: https://cognitivemetrics.co/wiki/
