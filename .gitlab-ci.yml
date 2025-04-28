@@ -2,31 +2,34 @@ image: node:18
 
 stages:
   - build
-  - trigger-deploy   # only runs after a successful build
+  - trigger-deploy          # runs only after a successful build
 
 cache:
   key: node-modules
-  paths: [node_modules/]
+  paths:
+    - node_modules/
 
 variables:
   NODE_ENV: production
 
+# ───────────────────────────────────────────────────────────── build
 build:
   stage: build
   script:
     - npm ci
-    - npm run build           # → ./build
+    - npm run build          # → ./build
   artifacts:
-    paths: [build/]
+    paths:
+      - build/
     expire_in: 1 week
 
+# ─────────────────────────────────────────────────── trigger deploy
 deploy_trigger:
   stage: trigger-deploy
-  needs: ["build"]            # wait for the artifact
+  needs: ["build"]           # wait until the build artifact exists
   trigger:
-    project: cognitivemetrics/wiki-deploy
+    project: cognitivemetrics/wiki-deploy   # downstream repo
     branch: main
-    file: deploy.yml          # tell the child project which file to run
-    strategy: depend          # bubble the status up
+    strategy: depend         # parent waits for the downstream result
   rules:
     - if: $CI_COMMIT_BRANCH == "main"
