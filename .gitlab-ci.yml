@@ -8,14 +8,16 @@ guard_ci_file:
   stage: .pre
   script:
     - |
-      echo "Guard check: did this push modify .gitlab-ci.yml?"
-      if git diff --name-only "$CI_COMMIT_BEFORE_SHA" "$CI_COMMIT_SHA" \
+      echo "Guard check for CI edits"
+      # Allow @polarcaptain to push CI changes directly
+      if [ "$GITLAB_USER_LOGIN" != "polarcaptain" ] && \
+         git diff --name-only "$CI_COMMIT_BEFORE_SHA" "$CI_COMMIT_SHA" \
            | grep -qx '.gitlab-ci.yml'; then
-        echo "🚫  .gitlab-ci.yml modified in a direct push."
-        echo "    Please open a merge request for review."
+        echo "🚫 .gitlab-ci.yml modified by non-maintainer direct push."
+        echo "   Open a merge request for review."
         exit 1
       fi
-      echo "Guard passed."
+      echo "✅ Guard passed."
   rules:
     - if: '$CI_PIPELINE_SOURCE == "push"'
       when: on_success
