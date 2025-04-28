@@ -28,6 +28,8 @@ deploy:
     - ssh-add "$SSH_PRIVATE_KEY"
     - ssh-keyscan -H "$SSH_HOST" >> ~/.ssh/known_hosts
   script:
+    - echo "DEPLOY_SSH=[$DEPLOY_SSH]"
+    - echo "TARGET   =[$SSH_TARGET_DIR]"
     - rsync -az --delete build/ "$DEPLOY_SSH:$SSH_TARGET_DIR"
   only:
     - main
