@@ -1,151 +1,105 @@
 // @ts-check
-// `@type` JSDoc annotations allow editor autocompletion and type checking
-// (when paired with `@ts-check`).
-// There are various equivalent ways to declare your Docusaurus config.
-// See: https://docusaurus.io/docs/api/docusaurus-config
-
 import {themes as prismThemes} from 'prism-react-renderer';
-
-// This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'CognitiveMetrics',
-  tagline: 'we made it',
+  title: 'Cognitive Metrics',
+  tagline: 'Modern psychometrics, beautifully documented',
   favicon: 'img/favicon.ico',
 
-  // Set the production url of your site here
-  url: 'https://your-docusaurus-site.example.com',
-  // Set the /<baseUrl>/ pathname under which your site is served
-  // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/wiki/',
+  // 🔗 Where the built site will live
+  url: 'https://cognitivemetrics.com',      // ← your domain
+  baseUrl: '/wiki/',                        // ← sub-folder, if any
 
-  // GitHub pages deployment config.
-  // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  // GitHub pages / repo info (optional if you don’t deploy via GH)
+  organizationName: 'cognitivemetrics',     // ← GitHub org/user
+  projectName: 'wiki',                      // ← GitHub repo
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
 
-  // Even if you don't use internationalization, you can use this field to set
-  // useful metadata like html lang. For example, if your site is Chinese, you
-  // may want to replace "en" with "zh-Hans".
-  i18n: {
-    defaultLocale: 'en',
-    locales: ['en'],
+  i18n: {defaultLocale: 'en', locales: ['en']},
+
+  /** ---------- Theme / layout ---------------------------------------- **/
+  themeConfig: {
+    image: 'img/social-card.png',           // social sharing
+    colorMode: {
+      defaultMode: 'dark',
+      disableSwitch: false,                 // light/dark toggle
+      respectPrefersColorScheme: true,
+    },
+    prism: {
+      theme: prismThemes.vsDark,
+      darkTheme: prismThemes.vsDark,
+      additionalLanguages: ['php', 'python'],
+    },
+
+    navbar: {
+      title: 'Cognitive Metrics',
+      logo: {alt: 'CM logo', src: 'img/logo.svg'},
+      items: [
+        {to: '/docs/intro', label: 'Docs', position: 'left'},
+        {to: '/blog',       label: 'Blog', position: 'left'},
+        {
+          href: 'https://github.com/cognitivemetrics/wiki',
+          className: 'header-github-link',
+          'aria-label': 'GitHub repository',
+          position: 'right',
+        },
+      ],
+    },
+
+    footer: {
+      style: 'dark',
+      links: [
+        {
+          title: 'Learn',
+          items: [
+            {label: 'Quick Start', to: '/docs/intro'},
+            {label: 'API Reference', to: '/docs/api/overview'},
+          ],
+        },
+        {
+          title: 'Community',
+          items: [
+            {label: 'Discussions', href: 'https://github.com/cognitivemetrics/wiki/discussions'},
+            {label: 'Twitter / X', href: 'https://twitter.com/cognimetrics'},
+          ],
+        },
+        {
+          title: 'More',
+          items: [
+            {label: 'Blog', to: '/blog'},
+            {label: 'GitHub', href: 'https://github.com/cognitivemetrics/wiki'},
+          ],
+        },
+      ],
+      copyright: `© ${new Date().getFullYear()} Cognitive Metrics — All rights reserved.`,
+    },
   },
 
+  /** ---------- Presets ------------------------------------------------ **/
   presets: [
     [
       'classic',
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
-          sidebarPath: './sidebars.js',
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          path: 'docs',
+          routeBasePath: 'docs',
+          sidebarPath: require.resolve('./sidebars.js'),
+          editUrl: 'https://github.com/cognitivemetrics/wiki/edit/main/',
+          showLastUpdateAuthor: true,
+          showLastUpdateTime: true,
         },
         blog: {
           showReadingTime: true,
-          feedOptions: {
-            type: ['rss', 'atom'],
-            xslt: true,
-          },
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-          // Useful options to enforce blogging best practices
-          onInlineTags: 'warn',
-          onInlineAuthors: 'warn',
-          onUntruncatedBlogPosts: 'warn',
+          editUrl: 'https://github.com/cognitivemetrics/wiki/edit/main/blog/',
         },
-        theme: {
-          customCss: './src/css/custom.css',
-        },
+        theme: {customCss: require.resolve('./src/css/custom.css')},
+        gtag: {trackingID: 'G-XXXXXXX', anonymizeIP: true}, // optional GA4
       }),
     ],
   ],
-
-  themeConfig:
-    /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
-    ({
-      // Replace with your project's social card
-      image: 'img/docusaurus-social-card.jpg',
-      navbar: {
-        title: 'CognitiveMetrics',
-        logo: {
-          alt: 'CognitiveMetrics',
-          src: 'img/logo.svg',
-        },
-        items: [
-          {
-            type: 'docSidebar',
-            sidebarId: 'tutorialSidebar',
-            position: 'left',
-            label: 'Tutorial',
-          },
-          {to: '/blog', label: 'Blog', position: 'left'},
-          {
-            href: 'https://github.com/facebook/docusaurus',
-            label: 'GitHub',
-            position: 'right',
-          },
-        ],
-      },
-      footer: {
-        style: 'dark',
-        links: [
-          {
-            title: 'Docs',
-            items: [
-              {
-                label: 'Tutorial',
-                to: '/docs/intro',
-              },
-            ],
-          },
-          {
-            title: 'Community',
-            items: [
-              {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-              },
-              {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
-              },
-              {
-                label: 'X',
-                href: 'https://x.com/docusaurus',
-              },
-            ],
-          },
-          {
-            title: 'More',
-            items: [
-              {
-                label: 'Blog',
-                to: '/blog',
-              },
-              {
-                label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
-              },
-            ],
-          },
-        ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
-      },
-      prism: {
-        theme: prismThemes.github,
-        darkTheme: prismThemes.dracula,
-      },
-    }),
 };
-
 export default config;
