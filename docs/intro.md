@@ -1,47 +1,75 @@
 ---
-sidebar_position: 1
+
+id: intro-to-psychometrics
+title: Introduction to Psychometrics
+description: A foundational overview of psychometrics and its core concepts.
+slug: /intro-to-psychometrics
+-----------------------------
+
+# Introduction to Psychometrics
+
+Psychometrics is the scientific study of psychological measurement. It encompasses the development, evaluation, and application of tools used to measure cognitive abilities, personality traits, educational achievement, and other psychological attributes.
+
+## What is Measured?
+
+Psychometrics attempts to quantify constructs that are not directly observable, such as:
+
+* **Intelligence (g)**
+* **Personality traits** (e.g., extraversion, conscientiousness)
+* **Aptitudes** and **skills**
+* **Attitudes** and **values**
+* **Mental health constructs** (e.g., depression, anxiety)
+
+## Core Concepts
+
+### 1. **Reliability**
+
+The degree to which a measurement tool produces stable and consistent results.
+
+Types include:
+
+* Test-retest reliability
+* Inter-rater reliability
+* Internal consistency
+
+### 2. **Validity**
+
+The extent to which a test measures what it claims to measure.
+
+Common forms:
+
+* Construct validity
+* Criterion-related validity
+* Content validity
+
+### 3. **Standardization**
+
+Ensuring uniform procedures for administering and scoring tests, allowing for comparisons across individuals.
+
+### 4. **Norms and Percentiles**
+
+Norm-referenced interpretation allows an individual's score to be compared against a large, representative sample.
+
+## Common Applications
+
+* **Educational testing** (e.g., SAT, GRE)
+* **Clinical diagnosis** (e.g., MMPI, WAIS)
+* **Personnel selection** (e.g., aptitude and personality tests)
+* **Research** (e.g., measuring constructs in psychology and sociology)
+
+## Key Theoretical Models
+
+* **Classical Test Theory (CTT)**: Focuses on observed scores as a combination of true scores and error.
+* **Item Response Theory (IRT)**: Models the relationship between latent traits and test responses.
+* **Factor Analysis**: Used to identify underlying dimensions (e.g., in intelligence or personality).
+
+## Related Pages
+
+* [g Factor Theory](/wiki/g-factor)
+* [CHC Theory](/wiki/chc-theory)
+* [WAIS-IV](/wiki/wais-iv)
+* [Item Response Theory](/wiki/item-response-theory)
+
 ---
 
-# Tutorial Intro
-
-Let's discover **Docusaurus in less than 5 minutes**.
-
-## Getting Started
-
-Get started by **creating a new site**.
-
-Or **try Docusaurus immediately** with **[docusaurus.new](https://docusaurus.new)**.
-
-### What you'll need
-
-- [Node.js](https://nodejs.org/en/download/) version 18.0 or above:
-  - When installing Node.js, you are recommended to check all checkboxes related to dependencies.
-
-## Generate a new site
-
-Generate a new Docusaurus site using the **classic template**.
-
-The classic template will automatically be added to your project after you run the command:
-
-```bash
-npm init docusaurus@latest my-website classic
-```
-
-You can type this command into Command Prompt, Powershell, Terminal, or any other integrated terminal of your code editor.
-
-The command also installs all necessary dependencies you need to run Docusaurus.
-
-## Start your site
-
-Run the development server:
-
-```bash
-cd my-website
-npm run start
-```
-
-The `cd` command changes the directory you're working with. In order to work with your newly created Docusaurus site, you'll need to navigate the terminal there.
-
-The `npm run start` command builds your website locally and serves it through a development server, ready for you to view at http://localhost:3000/.
-
-Open `docs/intro.md` (this page) and edit some lines: the site **reloads automatically** and displays your changes.
+Next: [g Factor Theory →](/wiki/g-factor)
