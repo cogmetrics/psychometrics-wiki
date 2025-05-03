@@ -11,12 +11,12 @@ const sidebars = {
     },
     'faq',
     'resources',
-    'g_factor',
     {
       type: 'category',
       label: 'Foundations of Intelligence Research',
       collapsed: false,
       items: [
+        'foundations/g_factor',
         'foundations/history-of-intelligence-concept',
         'foundations/discovery-of-g',
         'foundations/key-definitions-of-intelligence',
