@@ -6,7 +6,7 @@ export default function Footer() {
     <footer className={styles.footer}>
       <div className={styles.topRow}>
         <a href="/" className={styles.brand}>
-          <img src="img/cognimetrics-logo.webp" alt="CognitiveMetrics" loading="lazy" />
+          <img src="https://cognitivemetrics.com/assets/cognimetrics.webp" alt="CognitiveMetrics" loading="lazy" />
           <span>CognitiveMetrics</span>
         </a>
 
