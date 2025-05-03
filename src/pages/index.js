@@ -13,14 +13,7 @@ export default function Home() {
         <div className="container">
           <h1 className="hero__title">Cognitive Metrics</h1>
           <p className="hero__subtitle">Modern psychometrics, beautifully documented.</p>
-          <div className={styles.buttons}>
-            <Link className="button button--primary button--lg" to="/docs/intro">
-              Get Started →
-            </Link>
-            <Link className="button button--secondary button--lg" to="/blog">
-              Read the Blog
-            </Link>
-          </div>
+          
         </div>
       </header>
 
