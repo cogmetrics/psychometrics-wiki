@@ -4,7 +4,7 @@ import {themes as prismThemes} from 'prism-react-renderer';
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'CognitiveMetrics',
-  tagline: 'Modern psychometrics, beautifully documented',
+  tagline: 'Work in progress, come back soon',
   favicon: 'img/favicon.ico',
 
   url: 'https://cognitivemetrics.com',
