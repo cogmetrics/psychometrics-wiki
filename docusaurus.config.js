@@ -82,7 +82,7 @@ const config = {
           ],
         },
       ],
-      copyright: `© ${new Date().getFullYear()} Cognitive Metrics — All rights reserved.`,
+      copyright: `© ${new Date().getFullYear()} CognitiveMetrics — All rights reserved.`,
     },
   },
 
