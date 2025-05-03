@@ -30,7 +30,3 @@
 .whiteTextFill:hover span {
   background-position: 0 0;
 }
-
-.navbar-home-link::after {
-  display: none !important;
-}
