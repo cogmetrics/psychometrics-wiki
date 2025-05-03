@@ -9,22 +9,13 @@ export default function Home() {
       title="Cognitive Metrics"
       description="Modern psychometrics, beautifully documented"
     >
-      <header className={`hero heroBanner ${styles.hero} heroFadeIn`}>
-      <div className="container">
-  <h1 className="hero__title">Cognitive Metrics</h1>
-  <p className="hero__subtitle">Modern psychometrics, beautifully documented.</p>
-  <div style={{ marginTop: '1.5rem' }}>
-    <a
-      className="button button--primary button--lg whiteTextFill"
-      href="/wiki/docs/intro"
-    >
-      <span>🧠 Explore Wiki</span>
-    </a>
-  </div>
-</div>
-
-
-</header>
+      <header className={`hero heroBanner ${styles.hero}`}>
+        <div className="container">
+          <h1 className="hero__title">Cognitive Metrics</h1>
+          <p className="hero__subtitle">Modern psychometrics, beautifully documented.</p>
+          
+        </div>
+      </header>
 
       <main>
       <section className={styles.features}>
