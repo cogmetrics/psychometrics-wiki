@@ -6,12 +6,11 @@ const sidebars = {
       type: 'category',
       label: 'Introduction',
       link: { type: 'doc', id: 'intro' },
-      collapsed: false,
+      collapsed: true,
       items: [],
     },
     'faq',
     'resources',
-    'glossary',
     'g_factor',
     {
       type: 'category',
@@ -28,7 +27,7 @@ const sidebars = {
     {
       type: 'category',
       label: 'Major Theoretical Models of g',
-      collapsed: false,
+      collapsed: true,
       items: [
         'theoretical/two-factor-theory',
         'theoretical/thurstone-primary-mental-abilities',
@@ -42,7 +41,7 @@ const sidebars = {
     {
       type: 'category',
       label: 'Landmark Intelligence Tests',
-      collapsed: false,
+      collapsed: true,
       items: [
         'tests/stanford-binet',
         'tests/wechsler-series',
@@ -53,7 +52,7 @@ const sidebars = {
     {
       type: 'category',
       label: 'Biological Bases of Intelligence',
-      collapsed: false,
+      collapsed: true,
       items: [
         'biology/genetics-of-intelligence',
         'biology/twin-and-adoption-designs',
@@ -64,7 +63,7 @@ const sidebars = {
     {
       type: 'category',
       label: 'Developmental Trajectory Across the Lifespan',
-      collapsed: false,
+      collapsed: true,
       items: [
         'development/infant-precursors',
         'development/childhood-stability-and-change',
@@ -75,7 +74,7 @@ const sidebars = {
     {
       type: 'category',
       label: 'Environmental & Contextual Influences',
-      collapsed: false,
+      collapsed: true,
       items: [
         'environment/education-and-school-quality',
         'environment/socio-economic-status',
@@ -87,7 +86,7 @@ const sidebars = {
     {
       type: 'category',
       label: 'Cross-Cultural Perspectives & Test Bias',
-      collapsed: false,
+      collapsed: true,
       items: [
         'cross-cultural/language-and-translation',
         'cross-cultural/measurement-invariance',
@@ -96,7 +95,7 @@ const sidebars = {
     {
       type: 'category',
       label: 'Applied Contexts',
-      collapsed: false,
+      collapsed: true,
       items: [
         'applied/educational-placement',
         'applied/occupational-and-military-selection',
@@ -106,7 +105,7 @@ const sidebars = {
     {
       type: 'category',
       label: 'Critiques of g and IQ testing',
-      collapsed: false,
+      collapsed: true,
       items: [
         'critiques/group-differences-and-race-debates',
         'critiques/stereotype-threat-and-test-anxiety',
@@ -115,6 +114,7 @@ const sidebars = {
         'critiques/overinterpretation-and-iq-maximalism',
       ],
     },
+    'glossary',
   ],
 };
 
