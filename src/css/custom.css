@@ -1,12 +1,12 @@
 :root {
-  --ifm-color-primary: #7b3aed;     /* brand violet */
-  --ifm-color-primary-dark:  #6b2fcd;
-  --ifm-color-primary-darker:#8c6ebc;
-  --ifm-color-primary-light: #8955f1;
-  --ifm-color-primary-lighter:#9a7ff5;
+  --ifm-color-primary:          #306d9b;
+  --ifm-color-primary-dark:     #26577c;
+  --ifm-color-primary-darker:   #1c415d;
+  --ifm-color-primary-light:    #3982ba;
+  --ifm-color-primary-lighter:  #5296c9;
+
   --ifm-code-font-size: 95%;
 }
-
 .heroBanner {
   background: linear-gradient(130deg, var(--ifm-color-primary), #141414 60%);
 }
