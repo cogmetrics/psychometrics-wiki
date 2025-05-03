@@ -23,6 +23,11 @@ const sidebars = {
     },
     {
       type: 'doc',
+      id: 'g_factor',
+      label: 'Rundown of the g factor',
+    },
+    {
+      type: 'doc',
       id: 'faq',
       label: 'Frequently Asked Questions',
     },

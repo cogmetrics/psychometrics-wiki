@@ -1,3 +1,9 @@
+---
+id: g_factor
+title: Rundown of the g factor
+description: Rundown of the g factor
+---
+
 # Rundown of the *g* factor
 The following is a summary of the main points of the theoretical, mathematical, and empirical status of the *g* factor. If you wish to develop a deep understanding of *g*, we highly recommend reading **[The g-factor](https://arthurjensen.net/wp-content/uploads/2020/04/The-g-factor-the-science-of-mental-ability-Arthur-R.-Jensen.pdf)** by Arthur Jensen.
 
