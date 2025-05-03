@@ -30,3 +30,12 @@
 .whiteTextFill:hover span {
   background-position: 0 0;
 }
+
+.no-icon-navbar .iconExternalLink_nPIU {
+  display: none;
+}
+
+.navbar__link--active {
+  color: var(--ifm-navbar-link-color);
+}
+

@@ -1,3 +1,9 @@
+---
+id: faq
+title: Frequently Asked Questions
+description: Frequesntly asked questions within psychometrics.
+---
+
 ## **1\. Introduction & Overview**
 
 ### **1.1. What is IQ?**

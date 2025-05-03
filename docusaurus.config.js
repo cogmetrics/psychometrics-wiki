@@ -1,5 +1,7 @@
 // @ts-check
 import {themes as prismThemes} from 'prism-react-renderer';
+import math   from 'remark-math';
+import katex  from 'rehype-katex';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -18,6 +20,14 @@ const config = {
 
   i18n: {defaultLocale: 'en', locales: ['en']},
 
+  
+  stylesheets: [{
+    href: 'https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css',
+    type: 'text/css',
+    integrity: 'sha384-2b0Q5iv51uM5UWXKO55dRrYwiam7DzF4Bf32c25VWlP5HZ8i0uKg3nHFW9W6p5e6',
+    crossorigin: 'anonymous',
+  },],
+
   /** ---------- Theme / layout ---------------------------------------- **/
   themeConfig: {
     image: 'img/social-card.png',           // social sharing
@@ -34,11 +44,17 @@ const config = {
 
     navbar: {
       title: 'CognitiveMetrics',
-      logo: {alt: 'CM logo', src: 'img/cognimetrics-logo.webp'},
+      logo: {
+        alt: 'CM logo',
+        src: 'img/cognimetrics-logo.webp',
+        href: 'https://cognitivemetrics.com',
+        target: '_self',
+      },
       items: [
-        {href: 'https://cognitivemetrics.com/', label: 'Home', position: 'left', target: '_self', className: 'navbar-home-link',},
-        {to: '/docs/intro', label: 'Wiki', position: 'left'},
-        {to: '/blog', label: 'Blog', position: 'left'},
+        {href: 'https://cognitivemetrics.com/tests/', label: 'IQ Tests', position: 'left', target: '_self', className: 'no-icon-navbar',},
+        {href: 'https://cognitivemetrics.com/calculator/', label: 'IQ Calculator', position: 'left', target: '_self', className: 'no-icon-navbar',},
+        {to: '/', label: 'Wiki', position: 'left'},
+        {href: 'https://reddit.com/r/iqtest/', label: 'Community', position: 'left', target: '_self', className: 'no-icon-navbar',},
       ],
     },
 
@@ -82,6 +98,8 @@ const config = {
           sidebarPath: require.resolve('./sidebars.js'),
           showLastUpdateAuthor: false,
           showLastUpdateTime: true,
+          remarkPlugins: [math],
+          rehypePlugins: [katex],
         },
         blog: {
           showReadingTime: true,
