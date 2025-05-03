@@ -36,7 +36,7 @@ const config = {
       title: 'CognitiveMetrics',
       logo: {alt: 'CM logo', src: 'img/cognimetrics-logo.webp'},
       items: [
-        {href: 'https://cognitivemetrics.com/', label: 'Home', position: 'left', target: '_self'},
+        {href: 'https://cognitivemetrics.com/', label: 'Home', position: 'left', target: '_self', className: 'navbar-home-link',},
         {to: '/docs/intro', label: 'Wiki', position: 'left'},
         {to: '/blog', label: 'Blog', position: 'left'},
       ],
