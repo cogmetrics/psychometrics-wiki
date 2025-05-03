@@ -10,3 +10,23 @@
 .heroBanner {
   background: linear-gradient(130deg, var(--ifm-color-primary), #141414 60%);
 }
+.whiteTextFill {
+  position: relative;
+  color: white;
+  overflow: hidden;
+}
+
+.whiteTextFill span {
+  position: relative;
+  display: inline-block;
+  background: linear-gradient(to right, white 50%, transparent 50%);
+  background-size: 200% 100%;
+  background-position: 100% 0;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: background-position 0.4s ease;
+}
+
+.whiteTextFill:hover span {
+  background-position: 0 0;
+}
