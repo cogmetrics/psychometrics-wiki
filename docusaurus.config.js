@@ -7,13 +7,11 @@ const config = {
   tagline: 'Modern psychometrics, beautifully documented',
   favicon: 'img/favicon.ico',
 
-  // 🔗 Where the built site will live
-  url: 'https://cognitivemetrics.com',      // ← your domain
-  baseUrl: '/wiki/',                        // ← sub-folder, if any
+  url: 'https://cognitivemetrics.com',
+  baseUrl: '/wiki/',
 
-  // GitHub pages / repo info (optional if you don’t deploy via GH)
-  organizationName: 'cognitivemetrics',     // ← GitHub org/user
-  projectName: 'wiki',                      // ← GitHub repo
+  organizationName: 'cognitivemetrics',
+  projectName: 'wiki',
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -36,7 +34,7 @@ const config = {
 
     navbar: {
       title: 'Cognitive Metrics',
-      logo: {alt: 'CM logo', src: 'img/logo.svg'},
+      logo: {alt: 'CM logo', src: 'img/cognimetrics-logo.webp'},
       items: [
         {to: '/docs/intro', label: 'Docs', position: 'left'},
         {to: '/blog',       label: 'Blog', position: 'left'},
