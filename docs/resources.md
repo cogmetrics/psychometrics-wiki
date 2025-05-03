@@ -1,10 +1,12 @@
 ---
 id: resources
-title: Comprehensive Online Resources List
+title: Comprehensive Resources List
 description: This is intended as a comprehensive list of trustworthy resources available online for IQ. It will undergo constant updates in order to ensure quality.
 ---
 
-# Overview
+# Online IQ Test Resourcs List
+
+## Overview
 
 What tests should I take to accurately measure my IQ?
 
@@ -19,18 +21,18 @@ What tests should I take to accurately measure my IQ?
 
 Note: *Verbal tests and subtests will be invalid for non-native English speakers. Tests below are normed for people aged 16+ unless otherwise specified.*
 
-# Online Resources
+## Online Resources
 |**Tiers**|**Test**|**g-Loading**|**Norms**|**Studies/Data**|
 |:-|:-|:-|:-|:-|
 |S (Pro Tier)|[**Pre-'94 SAT**](http://cognitivemetrics.com/)|0.93|[Norms](https://imgur.com/a/kK0APeu) [Dist.](https://imgur.com/a/erbSx3D)|[pdf](https://pdfhost.io/v/F3fb0u6uV_SAT_1980pdf.pdf) [xH](https://text.is/ud2nt) [Validity](https://www.reddit.com/r/cognitiveTesting/comments/19acz86/another_old_sat_validity_post/) [Coaching Eff.](https://files.eric.ed.gov/fulltext/ED385593.pdf) [Majors v. SAT](https://www.reddit.com/r/cognitiveTesting/comments/15lv8ud/10_years_of_old_sat_scores_and_intended_college/) [SAT + IvyL](https://www.reddit.com/r/cognitiveTesting/comments/yiz8ui/average_ivy_league_freshman_iq_during_the_8090s/)|
 ||[**Old GRE**](http://cognitivemetrics.com/)|0.92|[Norms](https://imgur.com/a/wkIGEtv) [Dist.](https://imgur.com/a/TRJ9KIq)|[pdf](https://pdfhost.io/v/2g8~.EpG4_GRE_General_Test_Form_9000) [xH](https://text.is/xsd59) [WaisR](https://www.reddit.com/r/cognitiveTesting/comments/16dwhp9/waisr_and_gre_different_tests_same_g/jztlo59/?context=3)|
 ||[**AGCT**](https://cognitivemetrics.com/)|0.92|Given|[pdf](https://pdfhost.io/v/G7G6qBYPl_Manual_for_the_general_classification_tests_) [Renorming](https://www.reddit.com/r/cognitiveTesting/comments/16gsdic/army_general_classification_test/) [H](https://clearinghouse-umich-production.s3.amazonaws.com/media/doc/79410.pdf) [Har](https://sci-hub.wf/10.1037/0021-9010.77.6.875)|
-|A (Excellent)|[**CAIT**](https://cognitivemetrics.com/)|0.85|[Norms](https://www.docdroid.net/exJns11/cait-norms-pdf#page=4)|[g\_load](https://www.reddit.com/r/cognitiveTesting/comments/18foh61/cait_factor_analysis/), [Turk Version](https://drive.google.com/file/d/1s_GqG2xsI4iXcaDOXYowGZWKcPUc8GBj/view)|
+|A (Excellent)|[**CAIT**](https://cognitivemetrics.com/)|0.85|[Norms](https://www.docdroid.net/exJns11/cait-norms-pdf##page=4)|[g\_load](https://www.reddit.com/r/cognitiveTesting/comments/18foh61/cait_factor_analysis/), [Turk Version](https://drive.google.com/file/d/1s_GqG2xsI4iXcaDOXYowGZWKcPUc8GBj/view)|
 ||[1926 SAT](https://www.reddit.com/r/cognitiveTesting/comments/1ekzxmn/the_1926_sat/)|0.86|N/A|[1926 Report](https://pdfhost.io/v/Cdac5m7bx_SAT1926Report)|
 ||[**Cogn-IQ**](http://www.cogn-iq.org/)|N/A|N/A|N/A|
 ||[**JCTI**](https://jouve-cerebrals-test-of-induction.netlify.app/)|N/A|Included|[Data](http://www.cogn-iq.org/reliability-validity-jouve-cerebrals-test-induction-correlational-study-sat-rist.html)|
 ||[TRI52](https://web.archive.org/web/20100122211331/http://www.cerebrals.com/tests/tri/TRI52.html)|N/A|[Table](https://web.archive.org/web/20091229185320/http://www.cerebrals.com/tests/tri/Classeur1.pdf)|[CRV](https://web.archive.org/web/20100215201915/http://cerebrals.com/tests/tri/pdf/TRI52%20CRV.pdf) [2](https://web.archive.org/web/20100215205843/http://cerebrals.com/tests/tri/pdf/TRI52%20Reliability.pdf) [3](https://web.archive.org/web/20100215141953/http://cerebrals.com/tests/tri/pdf/TRI52_WAIS_published.pdf) [4](https://web.archive.org/web/20100215141953/http://cerebrals.com/tests/tri/pdf/TRI52_WAIS_published.pdf) [5](https://ngtest.files.wordpress.com/2019/08/scores-of-high-range-tests.pdf)|
-||WN/C-09 [(current) ](http://www.cogn-iq.org/whats-next-iq-test.html)[(old)](https://web.archive.org/web/20160323114322/http://www.cerebrals.org/c2009/)|N/A|Included(new) [Norms(old)](https://docs.google.com/spreadsheets/u/1/d/e/2PACX-1vRGRRzlv-y5-NwwsaGF1Tr4zpNKbEjS5d3woGW_kce4GcEzSgOojHhwG1c2K4N7lUG6maDA43w-c8gc/pubhtml#)|[Data](http://www.cogn-iq.org/whats-next-iq-test-psychometric-properties.html), [CRV(old)](https://imgur.com/a/zGrTRX8)|
+||WN/C-09 [(current) ](http://www.cogn-iq.org/whats-next-iq-test.html)[(old)](https://web.archive.org/web/20160323114322/http://www.cerebrals.org/c2009/)|N/A|Included(new) [Norms(old)](https://docs.google.com/spreadsheets/u/1/d/e/2PACX-1vRGRRzlv-y5-NwwsaGF1Tr4zpNKbEjS5d3woGW_kce4GcEzSgOojHhwG1c2K4N7lUG6maDA43w-c8gc/pubhtml##)|[Data](http://www.cogn-iq.org/whats-next-iq-test-psychometric-properties.html), [CRV(old)](https://imgur.com/a/zGrTRX8)|
 ||[JCFS](http://www.cogn-iq.org/figurative-sequences-iq-test.php)|N/A|Included|[Data](http://www.cogn-iq.org/figurative-sequences-iq-test-psychometric-properties.html)|
 ||[SMART](https://www.reddit.com/r/cognitiveTesting/comments/17jg3wm/sat_math_advanced_rendition_test/)|0.84|Given|[Tech. Report](https://pdfhost.io/v/bjCTQnI4a_SMART_Technical_Report)|
 |B (Good)|IAW [(current)](http://www.cogn-iq.org/i-am-a-word-iq-test.php) [(old)](https://web.archive.org/web/20160322123607/http://www.cerebrals.org/iaw/index.php)|N/A|Included(new) [Norm(old)](https://docs.google.com/spreadsheets/u/1/d/e/2PACX-1vTAXAOLRctHeY1PAl0-cKQ9duaQU_yp8isN7_urJTKxGhmePI0yPvNHhcX1cVUcehseE_IXtP99QVb8/pubhtml)|[Data](http://www.cogn-iq.org/i-am-a-word-test-open-ended-untimed-verbal-ability-assessment-reliability-validity-standard-score-comparisons.html)|
@@ -68,7 +70,10 @@ Note: *Verbal tests and subtests will be invalid for non-native English speakers
 |F (Dogshit)|123test|N/A|N/A|N/A|
 ||Arealme|N/A|N/A|N/A|
 
-# Professional Tests (Psychologist Administration)
+## Professional Tests
+
+Keep in mind these tests are almost exclusively reserved for administration by a licensed psychologist.
+
 |**Test**|**g-Loading**|
 |:-|:-|
 |SBV|0.96|
