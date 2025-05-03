@@ -36,7 +36,8 @@ const config = {
       title: 'CognitiveMetrics',
       logo: {alt: 'CM logo', src: 'img/cognimetrics-logo.webp'},
       items: [
-        {to: '/docs/intro', label: 'Docs', position: 'left'},
+        {to: 'https://cognitivemetrics.com/', label: 'Home', position: 'left'},
+        {to: '/docs/intro', label: 'Wiki', position: 'left'},
         {to: '/blog',       label: 'Blog', position: 'left'},
         {
           href: 'https://github.com/cognitivemetrics/wiki',
