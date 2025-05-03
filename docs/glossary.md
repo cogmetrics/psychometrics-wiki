@@ -8,27 +8,27 @@ description: Glossary
 
 ## Theories of Intelligence
 
-### 1) Spearman’s Two-Factor Theory
+### Spearman’s Two-Factor Theory
 
 * Intelligence consists of **g** (general factor) and **s** (specific factor).  
 * This is the most accepted theory here in the subreddit and most well-known.
 
-### 2) Thurstone’s Primary Mental Abilities
+### Thurstone’s Primary Mental Abilities
 
 * Proposes that intelligence consists of **7 primary mental abilities**: numerical, spatial, verbal & verbal fluency, inductive reasoning, perceptual speed, and memory.  
 * There is not a single general intelligence factor, but contemporary research has shown that these primary abilities are actually still correlated and influenced by some higher-order general factor.
 
-### 3) Gardner's Theory of Multiple Intelligences
+### Gardner's Theory of Multiple Intelligences
 
 * Proposes that intelligence is composed of **9 factors**: linguistic, logical-mathematical, spatial, bodily-kinesthetic, musical, interpersonal, intrapersonal, naturalist, and existential intelligences.  
 * Rejects the idea of a general intelligence factor, but it should be noted that there is little actual substantial evidence supporting this theory.
 
-### 4) Sternberg’s Triarchic Theory
+### Sternberg’s Triarchic Theory
 
 * Proposes that intelligence consists of **three aspects**: analytical, creative, and practical intelligence.  
 * This theory is broader in its interpretation of intelligence, but note that these three intelligences have been shown to correlate to a higher-order cognition factor (that being **g**).
 
-### 5) Parietal Frontal Integration Theory
+### Parietal Frontal Integration Theory
 
 * Proposes that higher cognitive functions are emergent properties of the interactions of the parietal and frontal lobes.  
 * It is a neuroanatomical model, but it is not exactly complete in specifying the degree to which human intelligence may manifest itself because it is quite sophisticated.
@@ -37,15 +37,15 @@ description: Glossary
 
 ## Reliability, Validity, Normative Data
 
-### 1) Reliability
+### Reliability
 
 * Consistency of test scores. A high reliability means scores don’t fluctuate much on retests.
 
-### 2) Validity
+### Validity
 
 * How much a test measures what it intends to measure.
 
-### 3) Normative Data
+### Normative Data
 
 * Distribution of scores in a sample representing the population.
 
@@ -66,17 +66,17 @@ Transformations like logs or square roots can help correct skew or kurtosis.
 
 ## Raw Scores, Scaled Scores, and Composite Scores
 
-### 1) Raw Scores
+### Raw Scores
 
 * The bare points for each subtest or test. Leads to scaled scores.  
 * To make them easier to interpret and compare, raw scores are typically converted into scaled scores (SS) using a linear transformation. This adjusts for differences in the difficulty among subtests and allows scores to be placed on a similar metric of comparison.  
 * The mean and standard deviation (SD) of the scaled scores are usually set to certain parametrized values, such as a mean of 100 and an SD of 15, 16, or 24. SD values tell us the degree of variability in the scores. A higher SD, such as 24, indicates a wider distribution of scores, whilst a lower SD like 15 indicates a narrower distribution.
 
-### 2) Scaled Scores (SS)
+### Scaled Scores (SS)
 
 * Raw scores are converted to scaled scores after a sample has been standardized.
 
-### 3) Composite Scores
+### Composite Scores
 
 * Scaled scores are then combined to form the composite score, e.g., an overall Full Scale IQ.  
 * This is calculated by summing or averaging the SS from multiple subtests. These composite scores represent specific cognitive abilities like verbal and performance IQ.  
@@ -204,31 +204,31 @@ If the absolute difference between the average scores of the two tests is greate
 
 ## Factor Analysis, Intercorrelation Matrix, Subtest Loadings, Higher-Order Factors, Bifactor Models, Structural Equation Modeling
 
-### 1) Factor Analysis
+### Factor Analysis
 
 * Explains correlations between multiple variables by underlying factors.
 
-### 2) Intercorrelation Matrix
+### Intercorrelation Matrix
 
 * Table of Pearson correlation coefficients between variables.
 
-### 3) Subtest Loadings
+### Subtest Loadings
 
 * Correlation of each subtest to a factor.
 
-### 4) Higher-Order Factors
+### Higher-Order Factors
 
 * The **g** factor emerges if first-order factors are intercorrelated.
 
-### 5) Bifactor Models
+### Bifactor Models
 
 * Subtests are explained by both a general and a specific factor.
 
-### 6) Structural Equation Modeling
+### Structural Equation Modeling
 
 * Models latent variables, intercorrelations, possible direct/indirect effects.
 
-### 7) g-loading
+### g-loading
 
 * Ranges from 0 to 1. Higher means a test is more indicative of **g**.
 
@@ -320,14 +320,14 @@ Important in factor analysis/SEM for interpreting relationships between observed
 * Ages 16 to 90  
 * 4 indices derived from subtests
 
-### 1) Verbal Comprehension Index (VCI)
+### Verbal Comprehension Index (VCI)
 
 * **Similarities:** abstract verbal reasoning, semantic knowledge.  
 * **Vocabulary:** knowledge, verbal fluency, semantic knowledge.  
 * **Information:** general knowledge.  
 * **Comprehension** (supplemental): social conventions, rules.
 
-### 2) Perceptual Reasoning Index (PRI)
+### Perceptual Reasoning Index (PRI)
 
 * **Block Design:** spatial visualization, motor skill.  
 * **Visual Puzzles:** visual-spatial ability.  
@@ -335,13 +335,13 @@ Important in factor analysis/SEM for interpreting relationships between observed
 * **Picture Completion** *(optional)*: identify missing element.  
 * **Figure Weights** *(optional)*: quantitative reasoning with scales/shapes.
 
-### 3) Working Memory Index (WMI)
+###  Working Memory Index (WMI)
 
 * **Digit Span:** working memory, auditory processing.  
 * **Arithmetic:** quantitative reasoning.  
 * **Letter-Number Sequencing**: recall letters/numbers.
 
-### 4) Processing Speed Index (PSI)
+### Processing Speed Index (PSI)
 
 * **Symbol Search:** processing speed, associative memory.  
 * **Coding:** processing speed, associative memory.  
