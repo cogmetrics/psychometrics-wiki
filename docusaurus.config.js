@@ -3,7 +3,7 @@ import {themes as prismThemes} from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Cognitive Metrics',
+  title: 'CognitiveMetrics',
   tagline: 'Modern psychometrics, beautifully documented',
   favicon: 'img/favicon.ico',
 
@@ -36,15 +36,9 @@ const config = {
       title: 'CognitiveMetrics',
       logo: {alt: 'CM logo', src: 'img/cognimetrics-logo.webp'},
       items: [
-        {to: 'https://cognitivemetrics.com/', label: 'Home', position: 'left'},
+        {href: 'https://cognitivemetrics.com/', label: 'Home', position: 'left', target: '_self'},
         {to: '/docs/intro', label: 'Wiki', position: 'left'},
-        {to: '/blog',       label: 'Blog', position: 'left'},
-        {
-          href: 'https://github.com/cognitivemetrics/wiki',
-          className: 'header-github-link',
-          'aria-label': 'GitHub repository',
-          position: 'right',
-        },
+        {to: '/blog', label: 'Blog', position: 'left'},
       ],
     },
 
