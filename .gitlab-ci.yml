@@ -3,13 +3,12 @@ image: node:18
 stages:
   - build
   - deploy
-
+  
 guard_ci_file:
   stage: .pre
   script:
     - |
       echo "Guard check for CI edits"
-      # Allow @polarcaptain to push CI changes directly
       if [ "$GITLAB_USER_LOGIN" != "polarcaptain" ] && \
          git diff --name-only "$CI_COMMIT_BEFORE_SHA" "$CI_COMMIT_SHA" \
            | grep -qx '.gitlab-ci.yml'; then
@@ -23,6 +22,9 @@ guard_ci_file:
       when: on_success
     - when: never
 
+# ───────────────────────────────────────────
+# 2. Build Docusaurus
+# ───────────────────────────────────────────
 build:
   stage: build
   script:
@@ -33,9 +35,14 @@ build:
       - build/
     expire_in: 1 week
 
+# ───────────────────────────────────────────
+# 3. Deploy to your server
+# ───────────────────────────────────────────
 deploy_static_site:
   stage: deploy
-  needs: ["build"]
+  needs:
+    - job: build
+      artifacts: true 
   image: alpine:latest
   before_script:
     - apk add --no-cache openssh-client rsync
@@ -44,8 +51,9 @@ deploy_static_site:
     - install -m 600 "$SSH_PRIVATE_KEY" ~/.ssh/id_rsa
     - ssh-add ~/.ssh/id_rsa
     - ssh-keyscan -H "$SSH_HOST" >> ~/.ssh/known_hosts
+    - export RSYNC_FLAGS="${RSYNC_FLAGS:--az --delete --checksum --progress}"
   script:
-    - rsync $RSYNC_FLAGS build/ "$SSH_USER@$SSH_HOST:$SSH_TARGET_DIR"
+    - rsync $RSYNC_FLAGS ./build/ "$SSH_USER@$SSH_HOST:$SSH_TARGET_DIR/"
   rules:
     - if: $CI_COMMIT_BRANCH == "main"
   environment:
