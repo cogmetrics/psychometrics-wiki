@@ -4,11 +4,9 @@ import styles from './Footer.module.css';
 export default function Footer() {
   return (
     <footer className={styles.footer}>
-      {/* ─────────── Top row ─────────── */}
       <div className={styles.topRow}>
         <a href="/" className={styles.brand}>
-          {/* put cognimetrics.webp in /static/img/ or adjust path */}
-          <img src="/img/cognimetrics.webp" alt="CognitiveMetrics" loading="lazy" />
+          <img src="img/cognimetrics-logo.webp" alt="CognitiveMetrics" loading="lazy" />
           <span>CognitiveMetrics</span>
         </a>
 

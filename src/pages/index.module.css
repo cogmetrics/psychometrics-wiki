@@ -11,3 +11,34 @@
 .features {
   padding: 4rem 0;
 }
+
+.ctaRow {
+  margin-top: 2rem;
+}
+
+.howItWorks {
+  background-color: var(--ifm-background-surface-color);
+}
+
+.stepCard {
+  padding: 1.5rem;
+  border: 1px solid var(--ifm-color-emphasis-200);
+  border-radius: 8px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.stepNumber {
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  line-height: 2rem;
+  border-radius: 50%;
+  background: var(--ifm-color-primary);
+  color: #fff;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 0.75rem;
+}
