@@ -33,7 +33,7 @@ const config = {
     },
 
     navbar: {
-      title: 'Cognitive Metrics',
+      title: 'CognitiveMetrics',
       logo: {alt: 'CM logo', src: 'img/cognimetrics-logo.webp'},
       items: [
         {to: '/docs/intro', label: 'Docs', position: 'left'},
