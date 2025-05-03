@@ -85,13 +85,11 @@ const config = {
           path: 'docs',
           routeBasePath: 'docs',
           sidebarPath: require.resolve('./sidebars.js'),
-          editUrl: 'https://github.com/cognitivemetrics/wiki/edit/main/',
-          showLastUpdateAuthor: true,
+          showLastUpdateAuthor: false,
           showLastUpdateTime: true,
         },
         blog: {
           showReadingTime: true,
-          editUrl: 'https://github.com/cognitivemetrics/wiki/edit/main/blog/',
         },
         theme: {customCss: require.resolve('./src/css/custom.css')},
         gtag: {trackingID: 'G-XXXXXXX', anonymizeIP: true}, // optional GA4
