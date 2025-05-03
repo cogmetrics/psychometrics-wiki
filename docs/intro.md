@@ -1,75 +1,66 @@
 ---
-
-id: intro-to-psychometrics
+id: intro
 title: Introduction to Psychometrics
 description: A foundational overview of psychometrics and its core concepts.
-slug: /intro-to-psychometrics
------------------------------
+---
 
 # Introduction to Psychometrics
 
-Psychometrics is the scientific study of psychological measurement. It encompasses the development, evaluation, and application of tools used to measure cognitive abilities, personality traits, educational achievement, and other psychological attributes.
+Psychometrics is the scientific discipline concerned with the measurement of psychological attributes. It aims to quantify otherwise invisible traits such as intelligence, personality, motivation, or aptitude through structured assessments and statistical models.
 
-## What is Measured?
+## What Psychometrics Measures
 
-Psychometrics attempts to quantify constructs that are not directly observable, such as:
+Psychometric tools attempt to evaluate:
 
-* **Intelligence (g)**
-* **Personality traits** (e.g., extraversion, conscientiousness)
-* **Aptitudes** and **skills**
-* **Attitudes** and **values**
-* **Mental health constructs** (e.g., depression, anxiety)
+- **Cognitive abilities** (e.g., intelligence, memory, processing speed)
+- **Personality traits** (e.g., conscientiousness, extraversion)
+- **Aptitudes** (e.g., spatial reasoning, verbal ability)
+- **Emotional or clinical states** (e.g., depression, anxiety)
+- **Educational achievement** (e.g., literacy, numeracy)
 
-## Core Concepts
+These attributes are often referred to as *latent variables*—constructs that cannot be measured directly, but are inferred from patterns in behavior or responses.
 
-### 1. **Reliability**
+## Key Concepts in Psychometrics
 
-The degree to which a measurement tool produces stable and consistent results.
+### Reliability
 
-Types include:
+Reliability refers to the consistency of a measurement instrument. A reliable test will yield similar results under consistent conditions. Key types include:
 
-* Test-retest reliability
-* Inter-rater reliability
-* Internal consistency
+- **Test-retest reliability**: consistency over time
+- **Inter-rater reliability**: consistency between scorers
+- **Internal consistency**: coherence among test items
 
-### 2. **Validity**
+### Validity
 
-The extent to which a test measures what it claims to measure.
+Validity indicates how well a test measures what it purports to measure. Types of validity include:
 
-Common forms:
+- **Construct validity**: does the test actually capture the theoretical concept?
+- **Content validity**: does it cover the full range of the construct?
+- **Criterion validity**: does it correlate with other meaningful outcomes?
 
-* Construct validity
-* Criterion-related validity
-* Content validity
+### Standardization
 
-### 3. **Standardization**
+Standardized testing ensures uniform administration and scoring procedures. This allows for meaningful comparisons between individuals and across groups.
 
-Ensuring uniform procedures for administering and scoring tests, allowing for comparisons across individuals.
+### Norms and Scores
 
-### 4. **Norms and Percentiles**
+Test scores are typically interpreted relative to a **norm group**, enabling percentile rankings or standardized scores like IQ or z-scores.
 
-Norm-referenced interpretation allows an individual's score to be compared against a large, representative sample.
+## Theoretical Models
 
-## Common Applications
+Psychometrics uses several frameworks to interpret test performance:
 
-* **Educational testing** (e.g., SAT, GRE)
-* **Clinical diagnosis** (e.g., MMPI, WAIS)
-* **Personnel selection** (e.g., aptitude and personality tests)
-* **Research** (e.g., measuring constructs in psychology and sociology)
+- **Classical Test Theory (CTT)**: assumes observed scores are composed of true score + error.
+- **Item Response Theory (IRT)**: models the probability of a response based on the trait level and item properties.
+- **Factor Analysis**: uncovers latent dimensions underlying observed patterns (e.g., general intelligence, personality factors).
 
-## Key Theoretical Models
+## Applications of Psychometrics
 
-* **Classical Test Theory (CTT)**: Focuses on observed scores as a combination of true scores and error.
-* **Item Response Theory (IRT)**: Models the relationship between latent traits and test responses.
-* **Factor Analysis**: Used to identify underlying dimensions (e.g., in intelligence or personality).
+- **Educational testing**: assessing student achievement or learning potential.
+- **Clinical diagnostics**: evaluating psychological disorders through validated instruments.
+- **Occupational selection**: using tests to match individuals with job roles.
+- **Research**: studying the structure of cognition, personality, or behavior.
 
-## Related Pages
+## Final Thoughts
 
-* [g Factor Theory](/wiki/g-factor)
-* [CHC Theory](/wiki/chc-theory)
-* [WAIS-IV](/wiki/wais-iv)
-* [Item Response Theory](/wiki/item-response-theory)
-
----
-
-Next: [g Factor Theory →](/wiki/g-factor)
+Psychometrics sits at the intersection of psychology, statistics, and philosophy. It requires both rigorous quantitative methods and thoughtful interpretation of human variability. While it aims to make the invisible visible, it must always be wielded with caution, humility, and awareness of its limitations.
