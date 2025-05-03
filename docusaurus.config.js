@@ -57,33 +57,6 @@ const config = {
         {href: 'https://reddit.com/r/iqtest/', label: 'Community', position: 'left', target: '_self', className: 'no-icon-navbar',},
       ],
     },
-
-    footer: {
-      style: 'dark',
-      links: [
-        {
-          title: 'Learn',
-          items: [
-            {label: 'Quick Start', to: '/docs/intro'},
-          ],
-        },
-        {
-          title: 'Community',
-          items: [
-            {label: 'Discussions', href: 'https://github.com/cognitivemetrics/wiki/discussions'},
-            {label: 'Twitter / X', href: 'https://twitter.com/cognimetrics'},
-          ],
-        },
-        {
-          title: 'More',
-          items: [
-            {label: 'Blog', to: '/blog'},
-            {label: 'GitHub', href: 'https://github.com/cognitivemetrics/wiki'},
-          ],
-        },
-      ],
-      copyright: `© ${new Date().getFullYear()} CognitiveMetrics — All rights reserved.`,
-    },
   },
 
   /** ---------- Presets ------------------------------------------------ **/
