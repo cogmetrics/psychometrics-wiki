@@ -28,12 +28,23 @@ const config = {
     crossorigin: 'anonymous',
   },],
 
-  /** ---------- Theme / layout ---------------------------------------- **/
+  themes: [[
+    require.resolve('@easyops-cn/docusaurus-search-local'),
+    /** @type {import('@easyops-cn/docusaurus-search-local').PluginOptions} */
+    {
+      hashed: true,
+      highlightSearchTermsOnTargetPage: true,
+      explicitSearchResultPath: true,
+      searchBarPosition: 'right',
+      indexPages: true,
+    },
+  ],],
+
   themeConfig: {
-    image: 'img/social-card.png',           // social sharing
+    image: 'img/social-card.png',
     colorMode: {
       defaultMode: 'dark',
-      disableSwitch: false,                 // light/dark toggle
+      disableSwitch: false,
       respectPrefersColorScheme: true,
     },
     prism: {
@@ -55,6 +66,7 @@ const config = {
         {href: 'https://cognitivemetrics.com/calculator/', label: 'IQ Calculator', position: 'left', target: '_self', className: 'no-icon-navbar',},
         {to: '/', label: 'Wiki', position: 'left'},
         {href: 'https://reddit.com/r/iqtest/', label: 'Community', position: 'left', target: '_self', className: 'no-icon-navbar',},
+        {type: 'search', position: 'right'},
       ],
     },
   },
