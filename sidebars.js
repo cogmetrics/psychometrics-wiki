@@ -4,7 +4,7 @@ const sidebars = {
   wikiSidebar: [
     'intro',
     'faq',
-    'resources',
+    'misconceptions',
     {
       type: 'category',
       label: 'Foundations of Psychometrics',
