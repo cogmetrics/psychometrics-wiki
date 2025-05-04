@@ -62,10 +62,10 @@ const concepts = [
     href: '/wiki/docs/faq',
   },
   {
-    title: 'Comprehensive Testing Resource',
+    title: 'Misconceptions About IQ',
     icon: 'fa-solid fa-clipboard-check',
-    description: 'Curated list of validated tests, calculators, and reading links.',
-    href: '/wiki/docs/resources',
+    description: 'Addressing various IQ misconceptions which have permeated pop culture.',
+    href: '/wiki/docs/misconceptions',
   },
   {
     title: 'What is the g factor?',
