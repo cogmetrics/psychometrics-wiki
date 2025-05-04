@@ -1,0 +1,63 @@
+---
+id: g_factor
+title: What is the g factor?
+description: What is the g factor?
+---
+
+# What is the *g* factor?
+
+The following is a summary of the main points of the theoretical, mathematical, and empirical status of the *g* factor.  
+If you wish to develop a deep understanding of *g*, we highly recommend reading **[The g-factor](https://arthurjensen.net/wp-content/uploads/2020/04/The-g-factor-the-science-of-mental-ability-Arthur-R.-Jensen.pdf)** by Arthur Jensen.
+
+---
+
+### Individual differences and common variance
+
+Individual differences in many abilities can be assessed with psychometric tests. Individual differences in all cognitive [1] abilities are positively correlated to some degree, indicating they all have a common source of variance. A mathematical algorithm can be used to analyze the matrix of correlations among many diverse ability measurements to reveal the significant independent common factors in the matrix, termed principal components or factors. About 50 such independent factors have now been reliably identified. However, they differ greatly in generality and importance in life.
+
+- [1] *Cognitive* refers to conscious voluntary activity involving stimulus apprehension, discrimination, decision, choice, and the retention of experience or memory.
+
+---
+
+### The hierarchical structure of cognitive factors
+
+The factors can be visualized as a triangular hierarchy, numbering about 40 of the least-general primary factors at the first (lowest) level, eight or nine more general second-order factors at the next higher level, and the one most general factor (*g*) at the apex. Each factor in this hierarchical structure represents a statistically independent component of individual differences. The total variance of any particular test comprises *g* and possibly one or more of these first- and second-order factors. (The total variance on any test also includes specificity, an unidentified but reliable source of variance that is specific to a particular test, and random measurement error or unreliability.) At present, these are all the reliable factors revealed by factor analyses of hundreds of various tests of human abilities. Some future psychometric or chronometric tests might result in the discovery of additional factors that are independent of all the presently identified factors, except *g*.
+
+---
+
+### *g* loadings across tests
+
+Every cognitive ability that shows individual differences is loaded on the *g* factor. Tests differ in their *g* loadings, but their *g* loadings are not related to any particular kinds of knowledge or skills assessed by various tests. The possible cognitive indicators of *g* are of unlimited diversity. Although *g* is certainly not the only important factor, its extraordinary generality makes it the most important factor. In a large battery of diverse cognitive tests, *g* typically accounts for some 30 – 50 percent of the total population variance in test scores, far exceeding any of the subordinate factors.
+
+---
+
+### What *g* is **not**
+
+It is also important to understand what *g* is **not**. It is **not** a mixture or an average of a number of diverse tests representing different abilities. Rather, it is a *distillate*, reflecting the single factor that all different manifestations of cognition have in common. In fact, *g* is not really an ability at all. It does not reflect the tests’ contents *per se*, or any particular skill or type of performance. It defies description in purely psychological terms. Actually, it reflects some physical properties of the brain, as yet unknown, that cause diverse forms of cognitive activity to be positively correlated, not only in psychometric tests but in all of life’s mental demands. IQ scores are an attempt to estimate *g* and they typically do so quite well. The average correlation between various IQ scores and *g* is about .85. But because an IQ test is necessarily just a vehicle for *g*, it inevitably reflects other broad factors as well such as verbal, numerical, and spatial abilities, besides the specific properties of any particular IQ test. Yet, under proper conditions, the IQ is a good estimate of an individual’s relative standing on *g*.
+
+---
+
+### Task complexity and the expression of *g*
+
+Although *g* is manifested to some degree in every expression of cognition, some tasks and abilities reflect *g* much more than others. Usually, *g* is positively related to differences in the complexity of a task’s cognitive demands. Also, *g* is the platform for the effective use of the abilities represented at the level of first-order factors and for the expression of musical and artistic talents.
+
+---
+
+### *g* and real-world outcomes
+
+More than any other factors, *g* is correlated with a great many important variables in the practical world, like educability, job proficiency, occupational level, creativity, spouse selection, health status, longevity, accident rates, delinquency, and crime. (**tk** — link to page that lists *g*’s correlation with important real-life variables)
+
+---
+
+### Biological correlates of *g*
+
+*g* is uniquely correlated with variables outside the realm of psychometrics, particularly biological variables having behavioral correlates.
+
+#### Heritability and inbreeding depression
+
+- The heritability (i.e., the proportion of genetic variance) of various tests is directly related to the tests’ *g* loadings.  
+  - Inbreeding depression of test scores is a genetic effect that lowers a quantitative trait. It results from the greater frequency of double-recessive alleles in the offspring of genetically related parents, such as cousins. The degree of inbreeding depression on various mental test scores is strongly related to the tests’ *g* loadings. The larger the *g* loading, the greater is the effect of inbreeding depression on the test scores.
+
+#### Brain anatomy and physiology indicators
+
+- Certain anatomical and physiological brain variables are related to differences in tests’ *g* loadings: brain size, brain glucose metabolic rate, the latency and amplitude of cortical-evoked potentials, brain nerve conduction velocity, brain intracellular pH level, and certain biochemical neurotransmitters. Thus, *g* reflects biological components of intelligence more strongly than any other psychometric factors (or any combination thereof) that are statistically independent of *g*.
