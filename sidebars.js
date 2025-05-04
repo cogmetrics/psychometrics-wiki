@@ -90,7 +90,7 @@ const sidebars = {
     },
     {
       type: 'category',
-      label: 'Neurodivergence and Psychometrics',
+      label: 'Neurodivergence',
       collapsed: true,
       items: [
         'neurodivergence/adhd',
@@ -125,7 +125,7 @@ const sidebars = {
     },
     {
       type: 'category',
-      label: 'Critiques of g and IQ testing',
+      label: 'Critiques',
       collapsed: true,
       items: [
         'critiques/group-differences-and-race-debates',
