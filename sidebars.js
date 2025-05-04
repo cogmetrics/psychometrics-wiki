@@ -2,37 +2,26 @@
 /** @type {import('@docusaurus/plugin-content-docs').SidebarsConfig} */
 const sidebars = {
   wikiSidebar: [
-    /* ────────────────────────────────
-       Top-level single pages
-    ─────────────────────────────────*/
-    'intro',        // Introduction
-    'faq',          // Frequently Asked Questions
-    'resources',    // Comprehensive Resources List
-
-    /* ────────────────────────────────
-       FOUNDATIONS
-    ─────────────────────────────────*/
+    'intro',
+    'faq',
+    'resources',
     {
       type: 'category',
       label: 'Foundations of Psychometrics',
       collapsed: false,
       items: [
-        'foundations/g_factor',                              // What is the g factor?
-        'foundations/history-of-intelligence-concept',       // History of Intelligence
-        'foundations/discovery-of-g',                        // The Discovery of g
-        'foundations/theories-of-g',                         // Theories of g
-        'foundations/key-definitions-of-intelligence',       // Key Definitions of Intelligence
-        'foundations/basic-statistical-terminology',         // Basic Statistical Terminology
-        'models/bifactor-and-hierarchical',                  // Bifactor & Hierarchical Models
-        'models/process-overlap-mutualism-network',          // The Evolution of Modeling g
-        'models/cattell-horn-gf-gc-model',                   // The CHC Model of Intelligence
-        'foundations/spearman-law-of-diminishing-returns',   // Spearman’s Law of Diminishing Returns
+        'foundations/g_factor',
+        'foundations/history-of-intelligence-concept',
+        'foundations/discovery-of-g',
+        'foundations/theories-of-g',
+        'foundations/key-definitions-of-intelligence',
+        'foundations/basic-statistical-terminology',
+        'models/bifactor-and-hierarchical',
+        'models/process-overlap-mutualism-network',
+        'models/cattell-horn-gf-gc-model',
+        'foundations/spearman-law-of-diminishing-returns',
       ],
     },
-
-    /* ────────────────────────────────
-       INTELLIGENCE TESTS
-    ─────────────────────────────────*/
     {
       type: 'category',
       label: 'Landmark Intelligence Tests',
@@ -51,10 +40,6 @@ const sidebars = {
         'tests/1926-sat',
       ],
     },
-
-    /* ────────────────────────────────
-       NEUROSCIENCE & GENETICS
-    ─────────────────────────────────*/
     {
       type: 'category',
       label: 'Neuroscience and Genetics',
@@ -68,10 +53,6 @@ const sidebars = {
         'genetics/gwas-and-polygenic-scores',
       ],
     },
-
-    /* ────────────────────────────────
-       INFLUENCE ON LIFE & SOCIETY
-    ─────────────────────────────────*/
     {
       type: 'category',
       label: 'Influence on Society and Individuals',
@@ -84,10 +65,6 @@ const sidebars = {
         'influence/military',
       ],
     },
-
-    /* ────────────────────────────────
-       STATISTICS
-    ─────────────────────────────────*/
     {
       type: 'category',
       label: 'Statistics behind Psychometrics',
@@ -99,10 +76,6 @@ const sidebars = {
         'stats/differential-item-functioning',
       ],
     },
-
-    /* ────────────────────────────────
-       ENVIRONMENT & DEVELOPMENT
-    ─────────────────────────────────*/
     {
       type: 'category',
       label: 'Environment and Development',
@@ -117,10 +90,6 @@ const sidebars = {
         'development/aging',
       ],
     },
-
-    /* ────────────────────────────────
-       NEURODIVERGENCE
-    ─────────────────────────────────*/
     {
       type: 'category',
       label: 'Neurodivergence and Psychometrics',
@@ -134,10 +103,6 @@ const sidebars = {
         'neurodivergence/miscellaneous',
       ],
     },
-
-    /* ────────────────────────────────
-       GROUP DIFFERENCES
-    ─────────────────────────────────*/
     {
       type: 'category',
       label: 'Group Differences',
@@ -148,10 +113,6 @@ const sidebars = {
         'group-differences/national-iq-datasets',
       ],
     },
-
-    /* ────────────────────────────────
-       BIASES
-    ─────────────────────────────────*/
     {
       type: 'category',
       label: 'Biases in Testing',
@@ -164,10 +125,6 @@ const sidebars = {
         'biases/measurement-invariance',
       ],
     },
-
-    /* ────────────────────────────────
-       CRITIQUES
-    ─────────────────────────────────*/
     {
       type: 'category',
       label: 'Critiques of g and IQ testing',
@@ -180,10 +137,6 @@ const sidebars = {
         'critiques/nature-vs-nurture',
       ],
     },
-
-    /* ────────────────────────────────
-       MISCELLANEOUS
-    ─────────────────────────────────*/
     {
       type: 'category',
       label: 'Miscellaneous',
@@ -195,10 +148,6 @@ const sidebars = {
         'misc/liam-milliken',
       ],
     },
-
-    /* ────────────────────────────────
-       GLOSSARY
-    ─────────────────────────────────*/
     'glossary',
   ],
 };
