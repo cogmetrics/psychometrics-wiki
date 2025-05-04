@@ -18,7 +18,7 @@ const sidebars = {
         'foundations/basic-statistical-terminology',
         'foundations/bifactor-and-hierarchical',
         'foundations/evolution-of-modeling-g',
-        'foundations/chc-model-of-intelligence',
+        'foundations/chc-model-of-intelligence', 
       ],
     },
     {
