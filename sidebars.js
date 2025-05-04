@@ -94,7 +94,7 @@ const sidebars = {
     },
     {
       type: 'category',
-      label: 'Applied Contexts',
+      label: 'Predictive Validity',
       collapsed: true,
       items: [
         'applied/educational-placement',
