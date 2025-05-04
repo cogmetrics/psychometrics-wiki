@@ -82,7 +82,7 @@ const concepts = [
     title: 'g Factor',
     icon: 'fa-solid fa-brain',
     description: 'General intelligence underlying positive correlations among cognitive tasks.',
-    to: '/wiki/g-factor',
+    to: '/wiki/docs/intro',
   },
   {
     title: 'Fluid Intelligence',
