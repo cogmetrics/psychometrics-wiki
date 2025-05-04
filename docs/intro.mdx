@@ -1,0 +1,61 @@
+---
+id: intro
+title: Introduction to Psychometrics
+description: A foundational overview of psychometrics and its core concepts.
+---
+
+import useBaseUrl from '@docusaurus/useBaseUrl';
+
+# Introduction to Psychometrics
+
+Psychometrics is the scientific discipline concerned with the measurement of psychological attributes. It aims to quantify otherwise invisible traits such as intelligence, personality, motivation, or aptitude through structured assessments and statistical models.
+
+## What Psychometrics Measures
+
+Psychometric tools attempt to evaluate:
+
+- **Cognitive abilities** (e.g., intelligence, memory, processing speed)
+- **Personality traits** (e.g., conscientiousness, extraversion)
+- **Aptitudes** (e.g., spatial reasoning, verbal ability)
+- **Educational achievement** (e.g., literacy, numeracy)
+
+These attributes are often referred to as *latent variables*—constructs that cannot be measured directly, but can be inferred from patterns in behavior or responses. This wiki will initially focus on IQ testing, but in the future will expand towards other psychometric concepts.
+
+## Key Concepts
+
+### Intelligence Quotient
+
+**IQ (Intelligence Quotient)** is a score you get from a set of varying cognitive tests which compare your mental skills with other people your age. Test makers set the average score at 100, with one standard deviation being 15 points; most people fall between about 85 and 115.
+
+IQ tests don’t measure just one thing. They tap many abilities-for instance, spotting patterns quickly (**fluid intelligence**), recalling learned words and facts (**crystallized intelligence**), and keeping several digits in mind at once (**working memory**). These are only a few of the many skills the tests sample. Because most mental skills overlap, people who score high in one area tend to score high in others. Psychologists call this overall overlap **"g" for general intelligence**. However, this overlap is not just a statistical phenomenon; it has deep roots and empirical standing in neuroscience, biology, genetics, and psychology. 
+
+IQ is a statistical proxy for the g factor, not a complete map of "intelligence". Also, IQ is *not* a perfect stand-in for "intelligence' if you define intelligence broadly or differently. However, **IQ is considered the strongest single quantitative measure** of cognitive ability-especially in predicting certain life outcomes (academic achievement, job performance, etc.).
+
+### g-Factor, g-Loading, and Reliability
+
+* **g factor** (also known as general intelligence) is the common variance across a range of cognitive tasks. Statistically, it’s the first principal component extracted when psychologists run a factor analysis on many subtests, often accounting for 30-50% of the total score differences among individuals. Conceptually, g sits at the top of hierarchical models (e.g., Cattell-Horn-Carroll), predicting broad abilities such as verbal comprehension and fluid reasoning, and it correlates modestly yet consistently with real-world outcomes like educational attainment, job performance, and even health indicators. [Further Reading](https://w.wiki/8ssQ)
+
+* **g-loading** is the degree to which a test or subtest correlates with the g factor or general intelligence. A higher g loading means the task is drawing heavily on general intelligence, and figures above 0.8 are generally considered to be great. g-loadings are often derived from a factor analysis and high g-loadings are prized when the goal is to estimate overall cognitive ability efficiently.
+
+* **Reliability** is the consistency of test scores across time, forms, or item samples, quantified by coefficients such as test-retest, split-half, or Cronbach’s alpha. Full-scale IQ batteries typically aim for reliabilities above 0.90, yielding a small Standard Error of Measurement (SEM) so an observed score of 110, for example, likely reflects a “true” score within ±3-4 points. Without high reliability, even a strongly g-loaded test cannot be trusted for diagnoses, research comparisons, or tracking developmental change, because score swings could reflect measurement noise rather than real differences in ability.
+
+### Full Scale IQ (FSIQ) and Other Indices
+
+**FSIQ** is formed by **aggregating scores from a diversified set of cognitive tasks** (reasoning, memory, verbal comprehension, visual-spatial analysis, processing speed, and so on) each chosen for its strong loading on *g*.
+
+<img src={useBaseUrl('/img/document/g_two_factor.jpg')} alt="g-factor" className="center-img" />
+<p className="under-image">Various tasks combining to distill g</p>
+
+Because the tasks sample different mental operations, their **task-specific noise tends to cancel out** when combined, while the shared variance (the influence of *g*) accumulates. This makes FSIQ the **most reliable single summary of *g* and overall cognitive ability**: it minimizes measurement error and maximizes predictive validity for broad outcomes such as academic learning, occupational training, and life-course problem-solving.  
+
+The most common subtests included in FSIQ tests fall under the following broad factors:
+* **FRI - Fluid Reasoning Index**: gauges how well you solve novel problems and detect patterns without relying on prior knowledge.  
+* **VCI - Verbal Comprehension Index**: captures your grasp of vocabulary, verbal reasoning, and general knowledge expressed through language.  
+* **VSI - Visual Spatial Index**: measures the ability to perceive, analyze, and mentally manipulate visual-spatial relationships.  
+* **QRI - Quantitative Reasoning Index**: assesses understanding of numerical concepts and effectiveness at mathematical problem-solving.  
+* **WMI - Working Memory Index**: reflects how efficiently you can hold and transform information in immediate awareness.  
+* **PSI - Processing Speed Index**: times the speed and accuracy with which you carry out simple, routine cognitive tasks involving visual information.  
+
+## Final Thoughts
+
+Psychometrics sits at the intersection of psychology, statistics, and philosophy. It requires both rigorous quantitative methods and thoughtful interpretation of human variability. While it aims to make the invisible visible, it must always be wielded with caution, humility, and awareness of its limitations.

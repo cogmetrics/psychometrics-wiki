@@ -39,3 +39,17 @@
   color: var(--ifm-navbar-link-color);
 }
 
+.center-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1rem;
+}
+
+.under-image {
+  text-align: center;
+  font-size: 0.85rem;
+  color: var(--ifm-color-gray-700);
+  margin-top: 0.25rem;
+  line-height: 1.3;
+}
