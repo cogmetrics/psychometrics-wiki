@@ -81,7 +81,7 @@ const sidebars = {
       items: [
         'environment/education',
         'environment/socioeconomic-status',
-        'environment/nutrition-health-toxins',
+        'environment/nutrition',
         'development/prenatal-and-infant-experience',
         'development/parenting-and-resources',
         'development/adolescence',
@@ -108,7 +108,7 @@ const sidebars = {
       items: [
         'group-differences/race',
         'group-differences/sex',
-        'group-differences/national-iq-datasets',
+        'group-differences/nations',
       ],
     },
     {
