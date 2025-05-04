@@ -90,7 +90,7 @@ const config = {
           showReadingTime: true,
         },
         theme: {customCss: require.resolve('./src/css/custom.css')},
-        gtag: {trackingID: 'G-XXXXXXX', anonymizeIP: true}, // optional GA4
+        gtag: {trackingID: 'G-XXXXXXX', anonymizeIP: true},
       }),
     ],
   ],

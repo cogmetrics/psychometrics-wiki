@@ -6,21 +6,6 @@ description: This is intended as a comprehensive list of trustworthy resources a
 
 # Online IQ Test Resourcs List
 
-## Overview
-
-What tests should I take to accurately measure my IQ?
-
-* Bolded tests represent the most recommended tests to take and are required to request an IQ estimation on this subreddit:
-   * The Old SAT and GRE are the most accurate measures of g but will take 2/3 hours to administer.
-   * AGCT is a fast and very accurate measure of g (40 minutes).
-   * CAIT is the most comprehensive free test available and can measure your Full Scale IQ (\~70 minutes).
-   * JCTI is an accurate measure of fluid reasoning and recommended for non-native English speakers (due to verbal not being measured) and those with attention disorders (due to it being untimed).
-* After taking a variety of tests, you can calculate your Full Scale IQ and estimate your profile using the [**Compositator**](https://cognitivemetrics.com/calculator/).
-   * If you are unsure how to use the Compositator, make sure to check out [**S-C ULTRA | A Guide to The Compositator**](https://scultra.com/). If followed properly, it has a theoretical **g-loading of 0.94** and will be as accurate as you can ever realistically get to estimating your IQ for free.
-* If you want, you can take the tests in pdf forms on the links in the Studies/Data category.
-
-Note: *Verbal tests and subtests will be invalid for non-native English speakers. Tests below are normed for people aged 16+ unless otherwise specified.*
-
 ## Online Resources
 |**Tiers**|**Test**|**g-Loading**|**Norms**|**Studies/Data**|
 |:-|:-|:-|:-|:-|
