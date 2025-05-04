@@ -1,5 +1,6 @@
 ---
 id: dyslexia
-title: Dyslexia and IQ
-description: Dyslexia and IQ
+title: Dyslexia
+sidebar_label: Dyslexia
+description: Dyslexia
 ---

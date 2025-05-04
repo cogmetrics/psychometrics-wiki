@@ -7,7 +7,7 @@ const sidebars = {
     'misconceptions',
     {
       type: 'category',
-      label: 'Foundations of Psychometrics',
+      label: 'Foundations',
       collapsed: false,
       items: [
         'foundations/g_factor',
