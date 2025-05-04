@@ -7,10 +7,6 @@ import clsx from 'clsx';
 
 import styles from './index.module.css';
 
-/**
- * Landing page showcasing core psychometric concepts.
- * The hero section owns its backdrop; concept cards sit in a responsive grid.
- */
 export default function Home() {
   return (
     <>
@@ -21,30 +17,23 @@ export default function Home() {
         <meta property="og:image"       content="https://cognitivemetrics.com/assets/cognimetrics.webp" />
         <meta property="og:type"        content="website" />
         <title>CognitiveMetrics</title>
-
-        {/* Font Awesome icons */}
-        <link rel="stylesheet"
-              href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
       </Head>
 
       <Layout description="Objective psychometrics & resources you can trust">
-        {/* ────────── Hero ────────── */}
         <header className={styles.cmHero}>
           <div className={styles.cmHeroContent}>
             <h1 className={styles.cmHeroTitle}>
-              Understand the science of mental ability.
+              Comprehensive Psychometrics, <br/>IQ Testing, and Neuroscience Wiki
             </h1>
             <p className={styles.cmHeroTagline}>
-            Cognitive Metrics is a community-curated wiki dedicated to offering a comprehensive understanding of the science of mental ability.
+              A community-curated wiki dedicated to offering a comprehensive understanding of the science of mental ability.
             </p>
-            <Link className="button button--secondary button--lg" to="/wiki/docs/intro">
-              Start with the overview →
-            </Link>
           </div>
         </header>
 
-        {/* ────────── Concept grid ────────── */}
-        <main className={clsx('padding-vert--xl', styles.cmSection)}>
+        <main className={styles.cmSection}>
+          <h1 className={styles.cmSectionHeading}>Get Started</h1>
           <section className="container">
             <div className={styles.cmGrid}>
               {concepts.map((c) => (
