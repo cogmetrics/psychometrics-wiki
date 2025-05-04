@@ -1,3 +1,4 @@
+/* ─────────────────── src/pages/index.jsx ─────────────────── */
 import React from 'react';
 import Layout from '@theme/Layout';
 import Link from '@docusaurus/Link';
@@ -8,8 +9,7 @@ import styles from './index.module.css';
 
 /**
  * Landing page showcasing core psychometric concepts.
- * Cards have a max‑height, gentle hover lift, and blue icons consistent with the
- * reference image.
+ * The hero section owns its backdrop; concept cards sit in a responsive grid.
  */
 export default function Home() {
   return (
@@ -22,48 +22,31 @@ export default function Home() {
         <meta property="og:type"        content="website" />
         <title>CognitiveMetrics</title>
 
-        {/* Font Awesome for icons */}
-        <link
-          rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-        />
-
-        {/* Inline page styles — move into index.module.css when convenient */}
-        <style>{`
-          /* Background behind the grid */
-          .cmSection { background: #f4f7ff; }
-
-          .cmCard {
-            display: block;
-            padding: 2rem 2rem 1.5rem;
-            background: #ffffff;
-            border-radius: 15px;
-            text-decoration: none;
-            color: black;
-            max-height: 260px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.06);
-            transition: transform 0.25s ease, box-shadow 0.25s ease;
-          }
-          .cmCard:hover {
-            transform: translateY(-6px) scale(1.02);
-            text-decoration: none;
-            box-shadow: 0 8px 22px rgba(0,0,0,0.08);
-          }
-
-          /* Icon styling */
-          .cmIcon {
-            font-size: 2rem;
-            color: #306D9B; /* vivid blue‑purple similar to reference */
-            margin-bottom: 1rem;
-            display: inline-block;
-          }
-        `}</style>
+        {/* Font Awesome icons */}
+        <link rel="stylesheet"
+              href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
       </Head>
 
       <Layout description="Objective psychometrics & resources you can trust">
-        <main className={clsx('padding-vert--xl', 'cmSection')}>
+        {/* ────────── Hero ────────── */}
+        <header className={styles.cmHero}>
+          <div className={styles.cmHeroContent}>
+            <h1 className={styles.cmHeroTitle}>
+              Understand the science of mental ability.
+            </h1>
+            <p className={styles.cmHeroTagline}>
+            Cognitive Metrics is a community-curated wiki dedicated to offering a comprehensive understanding of the science of mental ability.
+            </p>
+            <Link className="button button--secondary button--lg" to="/wiki/docs/intro">
+              Start with the overview →
+            </Link>
+          </div>
+        </header>
+
+        {/* ────────── Concept grid ────────── */}
+        <main className={clsx('padding-vert--xl', styles.cmSection)}>
           <section className="container">
-            <div className="row">
+            <div className={styles.cmGrid}>
               {concepts.map((c) => (
                 <ConceptCard key={c.title} {...c} />
               ))}
@@ -75,9 +58,7 @@ export default function Home() {
   );
 }
 
-/**
- * Core psychometric topics.
- */
+/* ---------- data + small card component ---------- */
 const concepts = [
   {
     title: 'Introduction to Psychometrics',
@@ -117,15 +98,12 @@ const concepts = [
   },
 ];
 
-
 function ConceptCard({title, icon, description, href}) {
   return (
-    <div className="col col--4 margin-bottom--lg">
-      <Link to={href} className="cmCard">
-        <i className={clsx('cmIcon', icon)} aria-hidden="true" />
-        <h3>{title}</h3>
-        <p>{description}</p>
-      </Link>
-    </div>
+    <Link to={href} className={clsx(styles.cmCard)}>
+      <i className={clsx(styles.cmIcon, icon)} aria-hidden="true" />
+      <h3>{title}</h3>
+      <p>{description}</p>
+    </Link>
   );
 }
