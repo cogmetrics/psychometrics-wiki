@@ -80,50 +80,52 @@ export default function Home() {
  */
 const concepts = [
   {
-    title: 'g Factor',
+    title: 'Introduction to Psychometrics',
     icon: 'fa-solid fa-brain',
-    description: 'General intelligence underlying positive correlations among cognitive tasks.',
-    to: '/wiki/docs/intro',
+    description: 'Start here for a concise overview of psychometric science.',
+    href: '/wiki/docs/intro',
   },
   {
-    title: 'Fluid Intelligence',
-    icon: 'fa-solid fa-water',
-    description: 'Capacity to solve novel problems independent of acquired knowledge.',
-    to: '/wiki/fluid-intelligence',
+    title: 'Frequently Asked Questions',
+    icon: 'fa-solid fa-circle-question',
+    description: 'Quick answers to the most common psychometric queries.',
+    href: '/wiki/docs/faq',
   },
   {
-    title: 'Crystallized Intelligence',
-    icon: 'fa-solid fa-gem',
-    description: 'Knowledge and verbal skills accumulated through education and experience.',
-    to: '/wiki/crystallized-intelligence',
+    title: 'Comprehensive Testing Resource',
+    icon: 'fa-solid fa-clipboard-check',
+    description: 'Curated list of validated tests, calculators, and reading links.',
+    href: '/wiki/docs/resources',
   },
   {
-    title: 'Working Memory',
-    icon: 'fa-solid fa-memory',
-    description: 'Mental workspace for temporarily holding and manipulating information.',
-    to: '/wiki/working-memory',
+    title: 'What is the g factor?',
+    icon: 'fa-solid fa-lightbulb',
+    description: 'Explore the general intelligence factor and its empirical support.',
+    href: '/wiki/docs/foundations/g_factor',
   },
   {
-    title: 'Processing Speed',
-    icon: 'fa-solid fa-bolt',
-    description: 'How quickly the brain perceives, processes, and responds to information.',
-    to: '/wiki/processing-speed',
+    title: 'Psychometrics 101',
+    icon: 'fa-solid fa-graduation-cap',
+    description: 'Fundamental principles and measurement theories in psychometrics.',
+    href: '/wiki/docs/foundations/psychometrics-101',
   },
   {
-    title: 'Item Response Theory',
-    icon: 'fa-solid fa-chart-line',
-    description: 'Statistical framework linking latent traits to item performance for test precision.',
-    to: '/wiki/item-response-theory',
+    title: 'Basic Statistical Terminology',
+    icon: 'fa-solid fa-chart-bar',
+    description: 'Essential stats concepts needed to interpret test data accurately.',
+    href: '/wiki/docs/foundations/basic-statistical-terminology',
   },
 ];
 
-function ConceptCard({title, icon, description, to}) {
+
+function ConceptCard({title, icon, description, href}) {
   return (
     <div className="col col--4 margin-bottom--lg">
-      <Link to={to} className="cmCard">
+      <Link to={href} className="cmCard">
         <i className={clsx('cmIcon', icon)} aria-hidden="true" />
         <h3>{title}</h3>
         <p>{description}</p>
       </Link>
     </div>
-  );}
+  );
+}
