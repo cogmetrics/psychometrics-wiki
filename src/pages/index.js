@@ -31,7 +31,7 @@ export default function Home() {
         {/* Inline page styles — move into index.module.css when convenient */}
         <style>{`
           /* Background behind the grid */
-          .cmSection { background: #f1eded; }
+          .cmSection { background: #f4f7ff; }
 
           .cmCard {
             display: block;
@@ -39,6 +39,7 @@ export default function Home() {
             background: #ffffff;
             border-radius: 15px;
             text-decoration: none;
+            color: black;
             max-height: 260px;
             box-shadow: 0 4px 10px rgba(0,0,0,0.06);
             transition: transform 0.25s ease, box-shadow 0.25s ease;
@@ -52,7 +53,7 @@ export default function Home() {
           /* Icon styling */
           .cmIcon {
             font-size: 2rem;
-            color: #4d5bff; /* vivid blue‑purple similar to reference */
+            color: #306D9B; /* vivid blue‑purple similar to reference */
             margin-bottom: 1rem;
             display: inline-block;
           }
