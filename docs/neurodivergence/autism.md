@@ -1,5 +1,6 @@
 ---
 id: autism
-title: Autism and IQ
-description: Autism and IQ
+title: Autism
+sidebar_label: Autism
+description: Autism
 ---

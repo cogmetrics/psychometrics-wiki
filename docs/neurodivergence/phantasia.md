@@ -1,5 +1,6 @@
 ---
 id: phantasia
-title: Phantasia and IQ
-description: Phantasia and IQ
+title: Phantasia
+sidebar_label: Phantasia
+description: Phantasia
 ---

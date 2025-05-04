@@ -1,5 +1,6 @@
 ---
 id: miscellaneous
-title: Miscellaneous Neurodivergencies and IQ
-description: Miscellaneous Neurodivergencies and IQ
+title: Miscellaneous Neurodivergencies
+sidebar_label: Miscellaneous
+description: Miscellaneous Neurodivergencies
 ---

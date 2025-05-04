@@ -1,5 +1,6 @@
 ---
 id: adhd
-title: IQ and ADHD
-description: IQ and ADHD
+title: Attention-Deficit/Hyperactivity Disorder
+sidebar_label: ADHD
+description: Attention-Deficit/Hyperactivity Disorder
 ---

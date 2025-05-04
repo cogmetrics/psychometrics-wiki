@@ -1,5 +1,6 @@
 ---
 id: dyscalculia
-title: Dyscalculia and IQ
-description: Dyscalculia and IQ
+title: Dyscalculia
+sidebar_label: Dyscalculia
+description: Dyscalculia
 ---
