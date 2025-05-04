@@ -111,7 +111,7 @@ const concepts = [
   },
   {
     title: 'Basic Statistical Terminology',
-    icon: 'fa-solid fa-chart-bar',
+    icon: 'fa-solid fa-chart-line',
     description: 'Essential stats concepts needed to interpret test data accurately.',
     href: '/wiki/docs/foundations/basic-statistical-terminology',
   },
