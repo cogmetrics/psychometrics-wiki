@@ -74,16 +74,16 @@ const concepts = [
     href: '/wiki/docs/foundations/g_factor',
   },
   {
-    title: 'Psychometrics 101',
-    icon: 'fa-solid fa-graduation-cap',
-    description: 'Fundamental principles and measurement theories in psychometrics.',
-    href: '/wiki/docs/foundations/g_factor',
-  },
-  {
     title: 'Basic Statistical Terminology',
     icon: 'fa-solid fa-chart-line',
     description: 'Essential stats concepts needed to interpret test data accurately.',
     href: '/wiki/docs/foundations/basic-statistical-terminology',
+  },
+  {
+    title: 'The Evolution of Modeling g',
+    icon: 'fa-solid fa-timeline',
+    description: 'Milestones in measuring general intelligence across history.',
+    href: '/wiki/docs/foundations/evolution-of-modeling-g',
   },
 ];
 
