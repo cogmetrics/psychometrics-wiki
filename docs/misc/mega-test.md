@@ -1,5 +1,5 @@
 ---
 id: mega-test
-title: What is the Mega Test?
-description: Information about the Mega Test
+title: MEGA Test and other High Range Tests
+description: MEGA Test and other High Range Tests
 ---
