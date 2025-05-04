@@ -2,11 +2,15 @@ import React from 'react';
 import Layout from '@theme/Layout';
 import Link from '@docusaurus/Link';
 import Head from '@docusaurus/Head';
-
 import clsx from 'clsx';
 
 import styles from './index.module.css';
 
+/**
+ * Landing page showcasing core psychometric concepts.
+ * Cards have a max‑height, gentle hover lift, and blue icons consistent with the
+ * reference image.
+ */
 export default function Home() {
   return (
     <>
@@ -14,85 +18,54 @@ export default function Home() {
         <meta property="og:url"         content="https://cognitivemetrics.com/" />
         <meta property="og:title"       content="Cognitive Metrics" />
         <meta property="og:description" content="Comprehensive Psychometrics, IQ Testing, and Neuroscience Wiki" />
-        <meta property="og:image"       content="https://cognitivemetrics.com/assets/cognimetrics.webp"/>
+        <meta property="og:image"       content="https://cognitivemetrics.com/assets/cognimetrics.webp" />
         <meta property="og:type"        content="website" />
         <title>CognitiveMetrics</title>
+
+        {/* Font Awesome for icons */}
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+        />
+
+        {/* Inline page styles — move into index.module.css when convenient */}
+        <style>{`
+          /* Background behind the grid */
+          .cmSection { background: #f1eded; }
+
+          .cmCard {
+            display: block;
+            padding: 2rem 2rem 1.5rem;
+            background: #ffffff;
+            border-radius: 15px;
+            text-decoration: none;
+            max-height: 260px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.06);
+            transition: transform 0.25s ease, box-shadow 0.25s ease;
+          }
+          .cmCard:hover {
+            transform: translateY(-6px) scale(1.02);
+            text-decoration: none;
+            box-shadow: 0 8px 22px rgba(0,0,0,0.08);
+          }
+
+          /* Icon styling */
+          .cmIcon {
+            font-size: 2rem;
+            color: #4d5bff; /* vivid blue‑purple similar to reference */
+            margin-bottom: 1rem;
+            display: inline-block;
+          }
+        `}</style>
       </Head>
 
-      <Layout 
-        description="Objective psychometrics & resources you can trust"
-      >
-        <header className={clsx('hero heroBanner', styles.hero)}>
-          <div className="container">
-            <h1 className="hero__title">Cognitive&nbsp;Metrics</h1>
-            <p className="hero__subtitle">
-              Evidence-based guides, research, and tools for measuring human ability.
-            </p>
-
-            <div className={styles.ctaRow}>
-              <Link
-                className="button button--primary button--lg margin-right--sm"
-                to="/docs/intro"
-              >
-                📖 Start Reading
-              </Link>
-              <Link
-                className="button button--secondary button--lg"
-                to="/docs/faq"
-              >
-                ❓ FAQ
-              </Link>
-            </div>
-          </div>
-        </header>
-
-        <main>
-          <section className={styles.features}>
-            <div className="container">
-              <div className="row">
-                <Feature
-                  title="What is an IQ test?"
-                  emoji="❓"
-                  description="An IQ test is a standardized assessment designed to measure cognitive abilities like reasoning, memory, and problem-solving."
-                />
-                <Feature
-                  title="Are IQ tests accurate?"
-                  emoji="📏"
-                  description="Validated IQ tests are statistically reliable and correlate with academic and professional outcomes—but they don't capture every facet of intelligence."
-                />
-                <Feature
-                  title="Can I improve my IQ score?"
-                  emoji="📈"
-                  description="While baseline ability is relatively stable, you can boost test performance through deliberate practice and cognitive training."
-                />
-              </div>
-            </div>
-          </section>
-
-          <section className={clsx('padding-vert--lg', styles.howItWorks)}>
-            <div className="container">
-              <h2 className="text--center margin-bottom--lg">How Cognitive Metrics helps you</h2>
-              <div className="row">
-                <Step
-                  number="1"
-                  title="Learn the fundamentals"
-                  text="Start with our Intro guide to understand what IQ really measures (and what it doesn’t)."
-                  link="/docs/intro"
-                />
-                <Step
-                  number="2"
-                  title="Get common questions answered"
-                  text="Browse the FAQ for quick clarifications backed by peer-reviewed research."
-                  link="/docs/faq"
-                />
-                <Step
-                  number="3"
-                  title="Put knowledge into practice"
-                  text="Use our free tests, calculators, and curated reading lists to apply what you’ve learned."
-                  link="https://cognitivemetrics.com/tests/"
-                  external
-                />
-              </div>
+      <Layout description="Objective psychometrics & resources you can trust">
+        <main className={clsx('padding-vert--xl', 'cmSection')}>
+          <section className="container">
+            <div className="row">
+              {concepts.map((c) => (
+                <ConceptCard key={c.title} {...c} />
+              ))}
             </div>
           </section>
         </main>
@@ -101,32 +74,55 @@ export default function Home() {
   );
 }
 
-function Feature({emoji, title, description}) {
-  return (
-    <div className="col col--4 margin-bottom--lg text--center">
-      <h3>
-        {emoji} {title}
-      </h3>
-      <p>{description}</p>
-    </div>
-  );
-}
+/**
+ * Core psychometric topics.
+ */
+const concepts = [
+  {
+    title: 'g Factor',
+    icon: 'fa-solid fa-brain',
+    description: 'General intelligence underlying positive correlations among cognitive tasks.',
+    to: '/wiki/g-factor',
+  },
+  {
+    title: 'Fluid Intelligence',
+    icon: 'fa-solid fa-water',
+    description: 'Capacity to solve novel problems independent of acquired knowledge.',
+    to: '/wiki/fluid-intelligence',
+  },
+  {
+    title: 'Crystallized Intelligence',
+    icon: 'fa-solid fa-gem',
+    description: 'Knowledge and verbal skills accumulated through education and experience.',
+    to: '/wiki/crystallized-intelligence',
+  },
+  {
+    title: 'Working Memory',
+    icon: 'fa-solid fa-memory',
+    description: 'Mental workspace for temporarily holding and manipulating information.',
+    to: '/wiki/working-memory',
+  },
+  {
+    title: 'Processing Speed',
+    icon: 'fa-solid fa-bolt',
+    description: 'How quickly the brain perceives, processes, and responds to information.',
+    to: '/wiki/processing-speed',
+  },
+  {
+    title: 'Item Response Theory',
+    icon: 'fa-solid fa-chart-line',
+    description: 'Statistical framework linking latent traits to item performance for test precision.',
+    to: '/wiki/item-response-theory',
+  },
+];
 
-function Step({number, title, text, link, external = false}) {
-  const Tag = external ? 'a' : Link;
+function ConceptCard({title, icon, description, to}) {
   return (
-    <div className="col col--4">
-      <div className={styles.stepCard}>
-        <span className={styles.stepNumber}>{number}</span>
-        <h4>{title}</h4>
-        <p>{text}</p>
-        <Tag
-          className="button button--sm button--outline button--primary"
-          {...(external ? {href: link, target: '_self'} : {to: link})}
-        >
-          Learn&nbsp;more →
-        </Tag>
-      </div>
+    <div className="col col--4 margin-bottom--lg">
+      <Link to={to} className="cmCard">
+        <i className={clsx('cmIcon', icon)} aria-hidden="true" />
+        <h3>{title}</h3>
+        <p>{description}</p>
+      </Link>
     </div>
-  );
-}
+  );}
