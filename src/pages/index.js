@@ -88,7 +88,7 @@ const concepts = [
     title: 'Psychometrics 101',
     icon: 'fa-solid fa-graduation-cap',
     description: 'Fundamental principles and measurement theories in psychometrics.',
-    href: '/wiki/docs/foundations/psychometrics-101',
+    href: '/wiki/docs/foundations/g_factor',
   },
   {
     title: 'Basic Statistical Terminology',
