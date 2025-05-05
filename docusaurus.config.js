@@ -2,6 +2,8 @@
 import {themes as prismThemes} from 'prism-react-renderer';
 import math   from 'remark-math';
 import katex  from 'rehype-katex';
+import footnotes from 'remark-footnotes';
+
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -83,7 +85,7 @@ const config = {
           sidebarPath: require.resolve('./sidebars.js'),
           showLastUpdateAuthor: false,
           showLastUpdateTime: true,
-          remarkPlugins: [math],
+          remarkPlugins: [math, [footnotes, {inlineNotes: true}]],
           rehypePlugins: [katex],
         },
         blog: {
