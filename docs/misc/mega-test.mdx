@@ -16,31 +16,74 @@ They can be fun puzzle challenges if you enjoy that sort of thing-but do not rel
 
 ## Criticisms
 
-* **Recycled logic**: Many of these tests spam the same patterns constantly and are highly susceptible to the practice effect.  
-* **Ambiguity**: Many of the tests have artificially inflated ceilings because nobody can get close to answering all of the questions correctly since they are all ambiguous. You might have some sequence like 2, 4,? Well, this is ambiguous because 6, 8, or 16 are equally valid answers. Of course, this is an HRT measuring up to 210 IQ, so the actual answer will be more like 72389.  
-* **Author-specific preferences**: A lot of the way to resolve the issue of ambiguity is figuring out the test maker’s specific idiosyncrasies and logical preferences. This, of course, provides an advantage to people who have already taken a lot of tests by a particular author or who are willing to invest a lot of time into recognizing these patterns.  
-* **Effort**: If you do not put in many hours into these tests, you will do worse than someone who does and has your same IQ. You might be 150 IQ, but only invest 2 hours and score 140. Meanwhile, some other 150 IQ dude might put in 50 hours and score 170.
+### Recycled logic 
+Many of these tests spam the same patterns constantly and are highly susceptible to the practice effect.  
 
-    <img src={useBaseUrl('/img/document/time_of_work.png')} alt="g-factor" className="center-img" style={{ maxWidth: '420px', width: '100%' }} />
-    <p className="under-image">N-VCPE-R: Time of work[^jouve]</p>
+### Ambiguity
+Many of the tests have artificially inflated ceilings because nobody can get close to answering all of the questions correctly since they are all ambiguous. You might have some sequence like 2, 4,? Well, this is ambiguous because 6, 8, or 16 are equally valid answers. Of course, this is an HRT measuring up to 210 IQ, so the actual answer will be more like 72389.  
 
-    Additionally, there is an interview[^rick] where a famous "high IQ" person claims he has had to spend 150-180 hours on HRTs to achieve his famous 190+ scores and that his original childhood WISC score was 140.  
-* **Lack of qualifications**: Many of these tests are produced by individuals who do not hold degrees in psychology or even have a basic understanding of statistics or psychometrics, resulting in fundamentally flawed norming and data analysis.
-* **Narrow abilities**: A lot of these tests focus on a singular ability or two, such as number series, associations, analogies, or visuospatial induction. This makes them poor at measuring anything other than that particular ability, which is usually a narrow subset of FRI and meaningless for computing an FSIQ. Sometimes a 120 gets 160s on number series tests, and sometimes a 160 gets 120s. Additionally, a lot of these tests really seem to be measuring how much you care and are interested in/willing to invest time in solving a particular puzzle. While being more intelligent will always help, it is not the only large predictive factor at play, making these tests very poor measures of *g*.
-* **Norms**: These tests have many issues with norming.
-    * *Cheating risk*: Because administrations are untimed and unsupervised, examinees can consult external resources, artificially inflating raw scores. Honest participants are then normed against a distorted distribution.
-    * *Self-selection bias*: Scoring typically requires a fee, so only those confident they performed well are likely to submit their answers. Individuals who feel they scored "average" often withhold their attempt, skewing the normative sample toward outliers and exaggerating percentile conversions.
-    * *Small, unrepresentative samples*: Norms are sometimes based on fewer than 30 respondents drawn from online high-IQ forums-hardly reflective of the broader population (or even of the broader high-ability population). Such limited data make any tail-end extrapolation highly unstable.
-    * *Questionable statistical modeling*: Developers often apply simple z-score transformations under the assumption of a normal distribution. Yet cognitive ability may deviate from normality in the extreme right tail, and with so few data points a single additional correct item can shift an estimated IQ from 170 to 190-implausibly redefining a difference between "one in a million" and "one in a billion".
-* **Lack of data**: High-range tests currently lack any evidence establishing their g-loading or predictive validity. Reported correlations with established tests such as WAIS, SB, AGCT, SAT/GRE etc. usually very poor and derived from small, self-selected samples, giving developers considerable leeway in choosing norms and potentially overstating the strength of any observed relationships.
+### Author-specific preferences
+A lot of the way to resolve the issue of ambiguity is figuring out the test maker's specific idiosyncrasies and logical preferences. This, of course, provides an advantage to people who have already taken a lot of tests by a particular author or who are willing to invest a lot of time into recognizing these patterns.  
+### Effort
+If you do not put in many hours into these tests, you will do worse than someone who does and has your same IQ. You might be 150 IQ, but only invest 2 hours and score 140. Meanwhile, some other 150 IQ dude might put in 50 hours and score 170.
+
+<img src={useBaseUrl('/img/document/time_of_work.png')} alt="g-factor" className="center-img" style={{ maxWidth: '420px', width: '100%' }} />
+<p className="under-image">N-VCPE-R: Time of work[^jouve]</p>
+
+Additionally, there is an interview[^rick] where a famous "high IQ" person claims he has had to spend 150-180 hours on HRTs to achieve his famous 190+ scores and that his original childhood WISC score was 140.  
+
+### Lack of qualifications
+Many of these tests are produced by individuals who do not hold degrees in psychology or even have a basic understanding of statistics or psychometrics, resulting in fundamentally flawed norming and data analysis.
+
+### Narrow abilities
+A lot of these tests focus on a singular ability or two, such as number series, associations, analogies, or visuospatial induction. This makes them poor at measuring anything other than that particular ability, which is usually a narrow subset of FRI and meaningless for computing an FSIQ. Sometimes a 120 gets 160s on number series tests, and sometimes a 160 gets 120s. Additionally, a lot of these tests really seem to be measuring how much you care and are interested in/willing to invest time in solving a particular puzzle. While being more intelligent will always help, it is not the only large predictive factor at play, making these tests very poor measures of *g*.
+
+### Norms
+These tests have many issues with norming.
+* *Cheating risk*: Because administrations are untimed and unsupervised, examinees can consult external resources, artificially inflating raw scores. Honest participants are then normed against a distorted distribution.
+* *Self-selection bias*: Scoring typically requires a fee, so only those confident they performed well are likely to submit their answers. Individuals who feel they scored "average" often withhold their attempt, skewing the normative sample toward outliers and exaggerating percentile conversions.
+* *Small, unrepresentative samples*: Norms are sometimes based on fewer than 30 respondents drawn from online high-IQ forums-hardly reflective of the broader population (or even of the broader high-ability population). Such limited data make any tail-end extrapolation highly unstable.
+* *Questionable statistical modeling*: Developers often apply simple z-score transformations under the assumption of a normal distribution. Yet cognitive ability may deviate from normality in the extreme right tail, and with so few data points a single additional correct item can shift an estimated IQ from 170 to 190-implausibly redefining a difference between "one in a million" and "one in a billion".
+
+### Lack of data
+High-range tests currently lack any evidence establishing their g-loading or predictive validity. Reported correlations with established tests such as WAIS, SB, AGCT, SAT/GRE etc. usually very poor and derived from small, self-selected samples, giving developers considerable leeway in choosing norms and potentially overstating the strength of any observed relationships.
 
 ## Taking a look at the Mega Test
 
 ### Background
 
-The Mega Test, devised by philosopher-psychometrician Ronald K. Hoeflin and first published in Omni magazine in 1985, is an untimed, self-administered "high-range" IQ test intended to discriminate among individuals already scoring at the extreme right tail of conventional measures. It contains 48 multiple-choice items divided equally between verbal‐analogical and quantitative-spatial problems, and examinees typically worked on the test for several hours before mailing in their answer sheets for scoring. Original norms were derived from fewer than 400 self-selected entrants—mostly enthusiasts from high-IQ circles—with a raw score of 24 anchored to IQ 155 (σ = 15); each additional raw point was extrapolated to add roughly five IQ points, placing a perfect score near IQ 190–200. Although historical Mega Test results are still recognized by a handful of ultra-high-IQ societies, the test is no longer actively administered, and its small, non-representative normative sample means its reliability, g-loading, and predictive validity have never been demonstrated in peer-reviewed research.
+The Mega Test, devised by amateur psychometrician Ronald K. Hoeflin[^hoeflin] and first published in Omni magazine in 1985, is an untimed, self-administered "high-range" IQ test. The Mega Test was intended to discriminate among individuals already scoring at the extreme right tail of IQ. 
+
+It contains 48 multiple-choice items divided equally between verbal‐analogical and quantitative-spatial problems, and examinees typically worked on the test for several hours before mailing in their answer sheets for scoring. Original norms were derived from fewer than 400 self-selected entrants-mostly enthusiasts from high-IQ circles-with a raw score of 24 anchored to IQ 155. 
+
+Although Mega Test results are still recognized by a handful of high IQ societies, the test is no longer actively administered, and its small, non-representative sample means its reliability, g-loading, and predictive validity have never been demonstrated in peer-reviewed research.
+
+### Norming & Sample Bias
+
+Before the Mega Test ever reached the public, Omni magazine[^omni] had it "administered to more than 150 people - all members of the major high-IQ societies" simply to show that Mega-society members outscored Prometheus and Triple Nine members. No average ability subjects were included, so the bottom of the scale was never anchored.
+
+According to creator Ronald Hoeflin, "a bit over 4,000 people tried the Mega Test within a couple of years of its appearance."[^interview] He then "look[ed] at the previous test scores that participants reported and tried to create a distribution curve" that would "jibe" with the new raw scores with those earlier, self-reported results. In other words, the Mega Test's norms were built by recycling the same self reported claims about SAT, WAIS, etc. 
+
+Hoeflin also "standardized the test six times, using equipercentile equating with SAT and other scores," and he then extended the curve by extrapolation at the far end. Each renorm reused the same data, losing any statistical independence and making the norms increasingly speculative each time. Furthermore, since Mega Test scores are cross-equated to self-reported scores from the same people, external correlations are inflated and the already meager correlations are overstated.
+
+Taken together, the Mega Test's norms rest on a statistical house of cards built from a narrow sample and further multiplied through rounds of self-referencial norming.
+
+### Reliability & Validity
+
+no proctored retest data, shaky correlations with WAIS/RAPM/SAT.
+
+### Statistical Inflation
+
+why you can't safely extrapolate to "IQ 190+" with N ≈ 30.
+
+### Conclusion
+
+trues
 
 ## Citations
 
 [^jouve]: https://web.archive.org/web/20040405105745/http://www.jouvetesting.org/eng/reports/000300040001.pdf
 [^rick]: https://in-sightpublishing.com/2024/08/20/rick-rosner-on-his-iq-test-journey/
+[^hoeflin]: https://en.wikipedia.org/wiki/Ronald_K._Hoeflin
+[^omni]: https://www.docdroid.net/DvwMtpk/megatest-april-1985-omni-mag-pdf
+[^interview]: https://in-sightpublishing.com/2024/08/22/high-range-19/
