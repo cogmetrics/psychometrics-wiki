@@ -22,14 +22,6 @@ const config = {
 
   i18n: {defaultLocale: 'en', locales: ['en']},
 
-  
-  stylesheets: [{
-    href: 'https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css',
-    type: 'text/css',
-    integrity: 'sha384-2b0Q5iv51uM5UWXKO55dRrYwiam7DzF4Bf32c25VWlP5HZ8i0uKg3nHFW9W6p5e6',
-    crossorigin: 'anonymous',
-  },],
-
   themes: [[
     require.resolve('@easyops-cn/docusaurus-search-local'),
     /** @type {import('@easyops-cn/docusaurus-search-local').PluginOptions} */
@@ -91,7 +83,12 @@ const config = {
         blog: {
           showReadingTime: true,
         },
-        theme: {customCss: require.resolve('./src/css/custom.css')},
+        theme: {
+          customCss: [
+            require.resolve('./src/css/custom.css'),
+            require.resolve('katex/dist/katex.min.css'),
+          ],
+        },
         gtag: {trackingID: 'G-XXXXXXX', anonymizeIP: true},
       }),
     ],
