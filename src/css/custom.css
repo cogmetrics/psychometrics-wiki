@@ -75,3 +75,7 @@ h4 {
 blockquote {
   margin: 0 0 .1rem;
 }
+
+.footnotes h2 {
+  display: none;
+}
