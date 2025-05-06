@@ -189,8 +189,16 @@ Transformations like logs or square roots can help correct skew or kurtosis.
 Minimum difference in scores for significance (alternative formula since SDs are the same):
 
 $$
-  \text{Threshold} \approx \left$frac{\text{Difference}}{15 \times \sqrt{2 - 0.9 - 0.8}}\right) \times 1.96
-  \approx \left$frac{\text{Difference}}{8.67}\right) \times 1.96
+\text{Threshold}
+\;\approx\;
+\left(
+  \frac{\text{Difference}}
+       {15 \times \sqrt{2 - 0.9 - 0.8}}
+\right) \times 1.96
+\;\approx\;
+\left(
+  \frac{\text{Difference}}{8.67}
+\right) \times 1.96
 $$
 
 If the absolute difference between the average scores of the two tests is greater than that threshold, the differences are significant at *p* < .05.
