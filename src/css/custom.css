@@ -7,11 +7,18 @@
   --ifm-color-gray-333:      #333333;
   --ifm-color-gray-444:      #444444;
 
+  --caption-color: var(--ifm-color-gray-700);
+
   --ifm-h1-font-size: 2rem;
   --ifm-h2-font-size: 1.5rem;
   --ifm-h3-font-size: 1.25rem;
   --ifm-code-font-size: 95%;
 }
+
+html[data-theme='dark'] {
+  --caption-color: #dddddd;
+}
+
 .heroBanner {
   background: linear-gradient(130deg, var(--ifm-color-primary), #141414 60%);
 }
@@ -54,7 +61,7 @@
 .under-image {
   text-align: center;
   font-size: 0.85rem;
-  color: var(--ifm-color-gray-700);
+  color: var(--caption-color);
   margin-top: 0.25rem;
   line-height: 1.3;
 }
