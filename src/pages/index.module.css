@@ -31,7 +31,7 @@
   margin: 0 0 1rem;
 }
 .cmHeroTagline {
-  font-size: 1.125rem;
+  font-size: 1.1rem;
   margin-bottom: 2rem;
   max-width: 52rem;
   margin-inline: auto;
@@ -173,6 +173,11 @@
   .cmGrid {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .cmHeroTitle {
+    font-size: 2rem;
+  }
+
 }
 
 @media (max-width: 480px) {
