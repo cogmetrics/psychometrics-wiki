@@ -53,7 +53,7 @@ const sidebars = {
     },
     {
       type: 'category',
-      label: 'Influence on Society and Individuals',
+      label: 'Influence on Life',
       collapsed: true,
       items: [
         'influence/life-outcomes-and-success',
