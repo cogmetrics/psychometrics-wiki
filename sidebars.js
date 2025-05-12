@@ -20,7 +20,6 @@ const sidebars = {
         //'foundations/chc-model-of-intelligence', 
       ],
     },
-    /*
     { label: 'Landmark Intelligence Tests',
       type: 'category',
       collapsed: true,
@@ -30,14 +29,13 @@ const sidebars = {
         //'tests/ravens-progressive-matrices',
         //'tests/woodcock-johnson',
         //'tests/cattell-culture-fair',
-        //'tests/pre-1994-sat',
+        'tests/pre-1994-sat',
         //'tests/pre-2011-gre',
         //'tests/agct-army-alpha',
         //'tests/asvab',
         //'tests/1926-sat',
       ],
     },
-    */
     { label: 'Neuroscience and Genetics',
       type: 'category',
       collapsed: true,
