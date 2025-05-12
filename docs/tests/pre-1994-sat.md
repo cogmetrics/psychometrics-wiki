@@ -35,3 +35,11 @@ Few IQ tests have ever combined the accuracy of a top-tier FSIQ battery with the
 
 ---
 
+---
+
+## Citations
+
+[^frey]: https://gwern.net/doc/iq/high/smpy/2004-frey.pdf
+[^usnews_sat]: https://www.mail-archive.com/futurework@scribe.uwaterloo.ca/msg05978.html
+[^satcoaching1]: https://files.eric.ed.gov/fulltext/ED562660.pdf
+[^satcoaching2]: https://onlinelibrary.wiley.com/doi/epdf/10.1002/j.2333-8504.1980.tb01209.x
